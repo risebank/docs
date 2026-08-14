@@ -1,0 +1,58 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Rise Financial Group",
+  "theme": "willow",
+  "colors": {
+    "primary": "#7c7c7c",
+    "light": "#050505",
+    "dark": "#d5d5d5"
+  },
+  "logo": {
+    "light": "https://media.brand.dev/66489b1b-111f-4578-92e4-4014506d573c.svg",
+    "dark": "https://media.brand.dev/66489b1b-111f-4578-92e4-4014506d573c.svg"
+  },
+  "favicon": "https://media.brand.dev/a7831388-f8ae-4a33-bdd4-67daf663740d.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started/onboarding",
+              "getting-started/connect-bank"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/ai-bookkeeping",
+              "features/expenses",
+              "features/invoicing",
+              "features/payroll",
+              "features/reporting"
+            ]
+          },
+          {
+            "group": "Your Account",
+            "pages": [
+              "account/mobile-app",
+              "account/bank-connections",
+              "account/accountant-team",
+              "account/compliance"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/contact"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

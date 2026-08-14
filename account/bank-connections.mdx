@@ -1,0 +1,71 @@
+---
+title: "Connect and Manage Your Business Bank Accounts in Rise"
+sidebarTitle: "Bank Connections"
+description: "Connect 3,500+ banks via secure PSD2 open banking, manage authorizations, and keep transaction syncing running without interruption."
+---
+
+Rise connects to your business bank account via secure open banking (PSD2), giving it read-only access to your transaction history. Rise supports over 3,500 banks across the Nordics and Europe, so you can link virtually any business account in minutes. You can manage all your bank connections — add new ones, refresh existing ones, or disconnect accounts — from **Settings** in the Rise mobile app or web dashboard.
+
+## Viewing Your Connections
+
+Go to **Settings → Bank Connections** to see a list of all connected accounts. For each connection you'll see its current sync status and the date it was last authorized, so you always know which accounts are active and which may need attention.
+
+## Adding a New Bank Connection
+
+To connect a bank account for the first time, follow the full walkthrough in [Connect Your Bank Account](/getting-started/connect-bank).
+
+## Refreshing an Expired Connection
+
+Open banking authorizations expire periodically — typically every 90 days — as a security requirement imposed by your bank. When a connection expires, Rise stops receiving new transactions until you re-authorize. Rise notifies you as soon as this happens so you can restore access quickly.
+
+<Steps>
+  <Step title="Open the notification or navigate to Settings">
+    Tap the expiry notification Rise sends you, or go to **Settings → Bank Connections** manually.
+  </Step>
+  <Step title="Find the expired connection">
+    Locate the account marked as **Expired** in your list of bank connections.
+  </Step>
+  <Step title="Click Reconnect">
+    Click **Reconnect**. You'll be redirected to your bank's secure login page.
+  </Step>
+  <Step title="Re-authenticate with your bank">
+    Log in with your bank credentials and approve the connection as prompted by your bank.
+  </Step>
+  <Step title="Return to Rise">
+    Once you've completed authentication, Rise resumes syncing your transactions automatically. No further action is needed.
+  </Step>
+</Steps>
+
+## Connecting Multiple Accounts
+
+You can connect more than one bank account to Rise — for example, a main operating account and a separate savings or payroll account. Each connection is set up and managed independently, and all connected accounts appear together in **Settings → Bank Connections**.
+
+## Disconnecting an Account
+
+If you no longer want Rise to sync a particular account, you can disconnect it at any time.
+
+<Steps>
+  <Step title="Go to Settings → Bank Connections">
+    Open the Rise app or web dashboard and navigate to **Settings → Bank Connections**.
+  </Step>
+  <Step title="Select the account">
+    Click the bank account you want to remove.
+  </Step>
+  <Step title="Disconnect and confirm">
+    Click **Disconnect**, then confirm your choice when prompted.
+  </Step>
+</Steps>
+
+<Note>
+  Disconnecting an account stops new transactions from syncing going forward. All historical transactions that have already been imported into Rise are retained — they are not deleted when you disconnect.
+</Note>
+
+## Manual Statement Upload
+
+If your bank isn't supported by Rise's open banking integration, or if you'd prefer not to use open banking, you can import transactions by uploading bank statements manually. Rise accepts files in **CSV** and **OFX** formats.
+
+To upload a statement, go to **Settings → Bank Connections → Upload Statement** and follow the on-screen instructions.
+
+<Note>
+  Rise uses read-only open banking access. It can see your transactions but cannot initiate payments or move money on your behalf.
+</Note>

@@ -1,0 +1,77 @@
+---
+title: "Connect Your Business Bank Account to Rise in Minutes"
+sidebarTitle: "Connect Bank"
+description: "Link your business bank account to Rise using secure open banking. Transactions sync automatically so your books stay current without manual entry."
+---
+
+Connecting your bank is the step that brings Rise to life. Once your account is linked, Rise automatically pulls in your transactions and the AI gets to work categorising, reconciling, and flagging items that need your attention — so your books stay current without any manual data entry on your part. Rise supports over **3,500 banks** across Europe, and the connection takes just a few minutes to set up.
+
+## How it works
+
+Rise connects to your bank using **open banking**, the secure framework established under the EU's PSD2 regulation. This means Rise is granted read-only access to your transaction data through your bank's official, regulated API. Your login credentials are never shared with Rise and are never stored on Rise's servers — authentication always happens directly on your bank's own secure environment. The connection is safe, compliant, and can be revoked by you at any time from within Rise or directly through your bank.
+
+## Connecting your bank account
+
+<Steps>
+  <Step title="Open Bank Connections">
+    In the Rise app or web dashboard, navigate to **Settings → Bank Connections**. This is where you manage all connected accounts and initiate new connections.
+  </Step>
+
+  <Step title="Search for your bank">
+    Use the search bar to find your bank by name or filter by country. With 3,500+ supported institutions, most major and regional Nordic and European banks are available. If you don't see your bank, see the troubleshooting section below.
+  </Step>
+
+  <Step title="Click Connect">
+    Select your bank from the list and click **Connect**. Rise will redirect you to your bank's official secure login page to begin the authorisation process.
+  </Step>
+
+  <Step title="Authenticate with your bank">
+    Log in to your bank using your usual credentials — your username, password, and any two-factor authentication your bank requires. This step happens entirely on your bank's website or app, not within Rise.
+  </Step>
+
+  <Step title="Authorise read access">
+    After logging in, your bank will ask you to confirm that you're granting Rise read access to your selected business account(s). Review the permissions and confirm. Rise only ever requests read access — it cannot initiate payments or modify your account.
+  </Step>
+
+  <Step title="Return to Rise">
+    Once you've confirmed access, you'll be automatically returned to Rise. Your bank account is now connected and transactions will begin syncing immediately. Depending on your bank, you may see up to 90 days of historical transactions appear within a few minutes.
+  </Step>
+</Steps>
+
+## What syncs automatically
+
+Once connected, Rise continuously pulls in the following data from your bank:
+
+- **Transaction amounts** — in the original transaction currency
+- **Dates** — both the transaction date and settlement date where available
+- **Merchant names** — so the AI can identify recurring vendors and apply consistent categorisation
+- **Reference numbers** — payment references and invoice numbers that help match transactions to documents
+
+<CardGroup cols={2}>
+  <Card title="Supported Banks" icon="building-columns">
+    Rise supports **3,500+ banks** across Europe, including Nordea, Handelsbanken, Revolut, HSBC, Santander, Société Générale, Crédit Mutuel, and many more. Coverage spans all Nordic countries as well as major banking institutions across the EU and UK.
+  </Card>
+  <Card title="Sync Frequency" icon="rotate">
+    Transactions sync **at least once daily**. Most banks supported by Rise offer real-time or near-real-time sync, meaning new transactions typically appear in Rise within minutes of being made.
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<Accordion title="My bank isn't in the list">
+  Rise is continually expanding its list of supported banks. If your bank doesn't appear in the search results, contact the Rise support team at [support@risegroup.eu](mailto:support@risegroup.eu) and we'll let you know if it's on the roadmap or when it's expected to be added.
+
+  In the meantime, you can keep your books up to date by uploading bank statements manually. Rise accepts files in **CSV** and **OFX** format — go to **Settings → Bank Connections → Upload Statement** to get started.
+</Accordion>
+
+<Accordion title="My connection expired">
+  For security reasons, open banking connections require periodic re-authorisation — typically every **90 days**, though this varies by bank. Rise will send you a notification by email and in-app when your connection is approaching its expiry date.
+
+  To reconnect, go to **Settings → Bank Connections**, find the affected account, and click **Reconnect**. You'll be taken through the same brief authorisation flow as the initial setup. Transactions continue to sync normally once the connection is renewed.
+</Accordion>
+
+<Accordion title="I connected the wrong account">
+  No problem — you can disconnect and reconnect at any time. Go to **Settings → Bank Connections**, find the account you want to remove, and click **Disconnect**. Once disconnected, click **Add Bank Account** and follow the steps to connect the correct account.
+
+  Any transactions already imported from the incorrect account can be reviewed and removed by your Rise accountant team. Reach out via in-app chat if you need help cleaning up imported data.
+</Accordion>

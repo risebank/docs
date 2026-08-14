@@ -1,0 +1,65 @@
+{
+  "projectType": "saas",
+  "projectName": "Rise Financial Group",
+  "projectDescription": "Rise is an AI-powered financial management service for Nordic SMEs that combines AI-automated bookkeeping, a mobile-first app, and certified accountant oversight — so business owners never have to think about accounting again.",
+  "theme": "willow",
+  "primaryColor": "#7c7c7c",
+  "lightColor": "#050505",
+  "darkColor": "#d5d5d5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started/onboarding",
+              "getting-started/connect-bank"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/ai-bookkeeping",
+              "features/expenses",
+              "features/invoicing",
+              "features/payroll",
+              "features/reporting"
+            ]
+          },
+          {
+            "group": "Your Account",
+            "pages": [
+              "account/mobile-app",
+              "account/bank-connections",
+              "account/accountant-team",
+              "account/compliance"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/contact"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-powered automated bookkeeping (24/7, no manual entry)",
+    "Mobile-first app for approvals and oversight",
+    "Certified accountant team review and oversight",
+    "Real-time, audit-ready financial books",
+    "Automated expense and receipt collection",
+    "Automated invoicing and payment matching",
+    "Payroll and regulatory reporting",
+    "VAT filing and proactive tax compliance",
+    "Secure open banking connections (3,500+ banks supported)",
+    "EU data hosting with tamper-proof archiving"
+  ],
+  "publicApiSurface": []
+}
