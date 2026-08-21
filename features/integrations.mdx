@@ -1,0 +1,111 @@
+---
+title: "Integrations: Connect Rise to Your Workflow Stack"
+sidebarTitle: "Integrations"
+description: "Understand how Rise connects to third-party automation platforms through its API, and what each integration partner brings to your finance stack."
+---
+
+Rise exposes a single API that third-party platforms use to read your financial data and trigger actions on your behalf. This page explains the architecture behind the Integrations feature, the role each player takes, and where responsibility sits between Rise and the connected service.
+
+## The architecture at a glance
+
+Rise sits on one side of the connection. On the other side are automation and workflow platforms that call the Rise API to move data in and out of your books, expenses, invoices, and payroll. The API is the boundary: Rise owns everything to the left of it, and each integration partner owns everything to the right.
+
+<CardGroup cols={2}>
+  <Card title="Rise" icon="building-columns">
+    Your books, expenses, invoices, payroll, and reporting data.
+  </Card>
+
+  <Card title="Rise API" icon="plug">
+    The interface every integration uses to read and write data.
+  </Card>
+</CardGroup>
+
+<Note>
+  The Rise API is on the roadmap. Some integrations listed below are available today through native connectors; others become available as the public API ships.
+</Note>
+
+## Where responsibility lives
+
+Rise is responsible for the API surface, authentication, permissions, and the integrity of your financial data. Each third-party platform is responsible for its own connector, its own uptime, its own pricing, and how it handles data once it leaves Rise. When something breaks inside a workflow you built on Zapier, Zapier owns it. When the Rise API returns an error, Rise owns it.
+
+## Integration partners
+
+### MCP
+
+Model Context Protocol is an open standard that lets AI assistants and agents talk directly to external systems. A Rise MCP server exposes your accounting data to any MCP-compatible client, so an AI assistant can answer questions like "what did we spend on software last quarter?" or draft an invoice on your behalf, grounded in live data from your Rise account.
+
+Best for teams already using AI assistants and copilots that support MCP.
+
+### Zapier
+
+Zapier connects Rise to more than 6,000 other apps through triggers and actions. Use it to move data between Rise and your CRM, email, spreadsheets, or storage tools without writing code. Typical flows: create a Rise invoice when a deal closes in your CRM, log a new expense when a receipt lands in Gmail, or push a weekly P&L snapshot to Slack.
+
+Best for non-technical teams that need to wire Rise into existing SaaS tools.
+
+### n8n
+
+n8n is an open-source workflow automation platform you can self-host or run in the cloud. It offers the same trigger and action model as Zapier but with more control: branching logic, code steps, custom data transforms, and no per-task pricing when self-hosted.
+
+Best for technical teams that want automation without vendor lock-in or want to keep workflow data on their own infrastructure.
+
+### Flashnode
+
+Flashnode is a workflow platform focused on high-throughput, event-driven integrations. It shines when you need to process large volumes of transactions, sync data between multiple systems in near real time, or build pipelines that go beyond simple if-this-then-that logic.
+
+Best for finance operations teams running high-volume or multi-system pipelines.
+
+### Proprietary
+
+Proprietary integrations are direct, one-off connections Rise builds or supports for specific partners: an ERP, a bank, a payment processor, or an industry-specific tool. These are not self-serve. They typically involve a scoped agreement between Rise and the partner and are configured for your account by the Rise team.
+
+Best for enterprise customers with a specific system that no general-purpose automation tool covers.
+
+## Choosing an integration
+
+<CardGroup cols={2}>
+  <Card title="AI-native workflows" icon="robot">
+    Use MCP to give your AI assistant live access to Rise data.
+  </Card>
+
+  <Card title="No-code automation" icon="wand-magic-sparkles">
+    Use Zapier to wire Rise into the SaaS tools you already pay for.
+  </Card>
+
+  <Card title="Self-hosted or technical" icon="code-branch">
+    Use n8n when you want control, custom logic, or on-prem hosting.
+  </Card>
+
+  <Card title="High-volume pipelines" icon="bolt">
+    Use Flashnode for event-driven, multi-system data flows.
+  </Card>
+</CardGroup>
+
+## What Rise handles, what the partner handles
+
+<Tip>
+  A quick way to know who to contact when something goes wrong: if the problem is with the data in Rise, contact Rise. If the problem is with the workflow that moves the data, contact the platform that runs the workflow.
+</Tip>
+
+Rise owns:
+
+- The API and its authentication, rate limits, and versioning.
+- The accuracy and completeness of your financial data.
+- Permissions and audit logs for what each integration can access.
+
+The third-party platform owns:
+
+- The connector itself and its available triggers and actions.
+- Workflow execution, retries, and error handling on their side.
+- Their own pricing, support, and data retention policies.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="AI Bookkeeping" icon="calculator" href="/features/ai-bookkeeping">
+    See how Rise categorizes and reconciles transactions automatically.
+  </Card>
+
+  <Card title="Contact Support" icon="life-ring" href="/support/contact">
+    Ask about a specific integration or request a proprietary connection.
+  </Card>
+</CardGroup>

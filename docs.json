@@ -32,7 +32,8 @@
               "features/expenses",
               "features/invoicing",
               "features/payroll",
-              "features/reporting"
+              "features/reporting",
+              "features/integrations"
             ]
           },
           {
