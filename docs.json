@@ -91,17 +91,6 @@
       },
       {
         "tab": "Technical Documentation",
-        "groups": [
-          {
-            "group": "General",
-            "pages": [
-              "features/integrations"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Technical Documentation",
         "pages": [
           "features/integrations"
         ]
