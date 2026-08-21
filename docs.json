@@ -16,7 +16,7 @@
     "tabs": [
       {
         "tab": "Documentation",
-        "pages": [
+        "groups": [
           {
             "group": "Get Started",
             "pages": [
@@ -32,7 +32,8 @@
               "features/expenses",
               "features/invoicing",
               "features/payroll",
-              "features/reporting"
+              "features/reporting",
+              "features/integrations"
             ]
           },
           {
@@ -50,7 +51,12 @@
               "support/faq",
               "support/contact"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Technical Documentation",
+        "pages": [
           "features/integrations"
         ]
       }
