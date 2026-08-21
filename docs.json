@@ -16,13 +16,13 @@
     "tabs": [
       {
         "tab": "Documentation",
-        "groups": [
+        "pages": [
           {
             "group": "Get Started",
             "pages": [
               "introduction",
-              "getting-started/onboarding",
-              "getting-started/connect-bank"
+              "account/onboarding",
+              "features/connect-bank"
             ]
           },
           {
@@ -32,17 +32,14 @@
               "features/expenses",
               "features/invoicing",
               "features/payroll",
-              "features/reporting",
-              "features/integrations",
-              "features/dimensions",
-              "features/integrations"
+              "features/reporting"
             ]
           },
           {
             "group": "Your Account",
             "pages": [
-              "account/mobile-app",
-              "account/bank-connections",
+              "features/mobile-app",
+              "features/bank-connections",
               "account/accountant-team",
               "account/compliance"
             ]
@@ -53,7 +50,8 @@
               "support/faq",
               "support/contact"
             ]
-          }
+          },
+          "features/integrations"
         ]
       }
     ]
