@@ -51,7 +51,48 @@
               "support/faq",
               "support/contact"
             ]
+          },
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "account/onboarding",
+              "features/connect-bank"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/ai-bookkeeping",
+              "features/expenses",
+              "features/invoicing",
+              "features/payroll",
+              "features/reporting",
+              "features/integrations"
+            ]
+          },
+          {
+            "group": "Your Account",
+            "pages": [
+              "features/mobile-app",
+              "features/bank-connections",
+              "account/accountant-team",
+              "account/compliance"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/contact"
+            ]
           }
+        ]
+      },
+      {
+        "tab": "Technical Documentation",
+        "pages": [
+          "features/integrations"
         ]
       },
       {
