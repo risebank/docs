@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Rise Financial Group",
-  "theme": "sequoia",
+  "theme": "almond",
   "colors": {
     "primary": "#7c7c7c",
     "light": "#050505",
