@@ -34,7 +34,8 @@
               "features/payroll",
               "features/reporting",
               "features/integrations",
-              "features/dimensions"
+              "features/dimensions",
+              "features/integrations"
             ]
           },
           {
