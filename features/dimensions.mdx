@@ -1,0 +1,151 @@
+---
+title: "Dimensions: Track Costs by Project, Cost Center, or Site"
+sidebarTitle: "Dimensions"
+description: "Tag invoice and expense lines with your own dimensions — projects, cost centers, sites — and see any report split by them."
+icon: "layer-group"
+---
+
+Your chart of accounts tells you **what** you spent money on — software, rent, subcontracting. Dimensions tell you **what it was for**. Add a dimension like Project or Cost center, tag your invoice and expense lines with it, and Rise can split your whole profit and loss along that axis.
+
+Dimensions are yours to define. Rise ships with none, so you create exactly the axes your business reports on — nothing more.
+
+## What You Can Track
+
+<CardGroup cols={2}>
+  <Card title="Cost Centers" icon="building">
+    Split costs and revenue between offices, teams, or business units — Helsinki versus Jyväskylä, or Sales versus Delivery.
+  </Card>
+
+  <Card title="Projects" icon="diagram-project">
+    See the true cost of a client project or internal build, gathered from purchase invoices, expense claims, and journals alike.
+  </Card>
+
+  <Card title="Sites and Properties" icon="warehouse">
+    Track each property, vehicle, or piece of equipment separately when your accounts don't split them for you.
+  </Card>
+
+  <Card title="Grants and Funding" icon="hand-holding-dollar">
+    Collect the costs behind a Business Finland or EU claim, then export them to Excel for the claim template.
+  </Card>
+</CardGroup>
+
+## Setting Up Your Dimensions
+
+Dimensions live in your company settings in the Rise web app. Each dimension is an axis; each value is a choice on that axis.
+
+<Steps>
+  <Step title="Open Company Settings">
+    Go to **Company settings** and open the **Dimensions** section.
+  </Step>
+  <Step title="Create a Dimension">
+    Give the axis a name — **Project**, **Cost center**, **Property**. Names are unique within your company.
+  </Step>
+  <Step title="Add Values">
+    Add the choices that belong to it: **Ratamo renovation**, **House 1**, **Jyväskylä**. Values only exist if you create them here — nobody can invent one while tagging an invoice.
+  </Step>
+  <Step title="Set a Default Allocation">
+    Each value carries a default share, 100% unless you change it. When someone tags a line with that value, the share is pre-filled — handy when a cost center always takes, say, 60% of a recurring bill.
+  </Step>
+  <Step title="Add a Note on When It Applies">
+    Optionally describe when the value should be used — "all invoices from Kone Oy", "anything for the Ratamo site". These notes guide your accountant team today and will drive automatic tagging as it rolls out.
+  </Step>
+</Steps>
+
+<Note>
+  Dimensions belong to one company. If your Rise account holds several companies, each keeps its own dimensions and values.
+</Note>
+
+## Tagging Invoice and Expense Lines
+
+Tagging happens **per line**, not per document — one invoice can spread across several projects. Open the document, expand a line, and use its **Dimensions** block.
+
+You can tag lines on:
+
+- **Purchase invoices** — while approving, or afterwards as a correction
+- **Sales invoices** — on saved drafts and on sent invoices
+- **Expense claims** — done by your accountant or manager
+- **Journal entries** — done by your accountant team
+
+A line can carry values from several dimensions at once: the same subcontracting line can be both **Project · Ratamo** and **Cost center · Jyväskylä**.
+
+<Note>
+  Tagging becomes available once a document has been saved, because tags attach to saved lines. In a new invoice you haven't saved yet, the block tells you to save the draft first. Replacing the lines of a tagged draft clears its tags — Rise warns you before that save.
+</Note>
+
+### Splitting a Line Across Values
+
+When one line serves two projects, split it. Enter either a **percentage** of the line or a **euro amount** up to the line's net value, and add a second value for the rest.
+
+Rise does not force the shares to add up to 100%. Tag half a cost and the other half simply stays unallocated; tag more than the line and the report footnotes it as over-allocated. That flexibility is deliberate — partial tagging is a normal way to work.
+
+<Tip>
+  On expense claim lines, use percentages. Those lines don't carry a net amount of their own, so euro-amount splits aren't available there.
+</Tip>
+
+## Seeing the Numbers
+
+Once lines are tagged, the numbers follow automatically — there is nothing to post, copy, or refresh. Correct a tag on an invoice and the reports change the moment you save.
+
+<CardGroup cols={2}>
+  <Card title="By Dimension Report" icon="chart-column">
+    In **Reporting**, pick a dimension and a period to see costs, revenue, and net for every value on that axis. Defaults to your current fiscal year.
+  </Card>
+
+  <Card title="Unallocated Row" icon="circle-question">
+    Every dimension view ends with what wasn't tagged in that dimension, so you always know how much of the picture is covered.
+  </Card>
+
+  <Card title="Single-Value P&L" icon="file-invoice-dollar">
+    Run a profit and loss filtered to one value — the full statement for just that project or site.
+  </Card>
+
+  <Card title="Excel Export" icon="file-excel">
+    Export any dimension view to **XLSX** — built for pasting into grant and funding claim templates.
+  </Card>
+</CardGroup>
+
+### Finding What You Missed
+
+On the **General ledger** page you can filter to a single dimension value, or to cost and revenue rows carrying **no tag at all** in a chosen dimension. Click through from the unallocated row to see exactly which entries are still untagged, then tag them from there.
+
+<Note>
+  Because partial and overlapping tagging is allowed, dimension totals are an allocation view — they aren't meant to reconcile line-for-line with your official P&L. The report says so on screen.
+</Note>
+
+## Who Can Do What
+
+| Task | Admin | Manager | Accountant | Auditor | Employee |
+| --- | :-: | :-: | :-: | :-: | :-: |
+| Create, rename, archive dimensions and values | ✅ | ✅ | ✅ | — | — |
+| Tag purchase and sales invoice lines | ✅ | ✅ | ✅ | — | — |
+| Tag expense claim lines | ✅ | ✅ | ✅ | — | — |
+| Tag journal entry lines | — | — | ✅ | — | — |
+| View dimension reports | ✅ | ✅ | ✅ | ✅ | — |
+
+Employees never tag dimensions, not even on their own expense claims — they submit, and your accountant or manager tags. Auditors see everything and change nothing.
+
+## Renaming and Archiving
+
+Dimensions and values are never truly deleted, so your history stays intact.
+
+- **Rename** a dimension or value at any time. Every past entry follows the new name.
+- **Archive** a value you've stopped using. It disappears from the tagging pickers, while entries already tagged with it keep showing up in reports, marked as archived.
+- **Restore** by creating a value with the same name again — Rise brings the archived one back with its history reconnected.
+
+Every change to your dimension setup is written to the audit log, with the before and after values.
+
+<Tip>
+  Start with one dimension and a handful of values. A single well-tagged Cost center axis is worth more than four half-tagged ones, and you can always add another axis later.
+</Tip>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Reporting" icon="chart-line" href="/features/reporting">
+    Live P&L, balance sheet, and cash flow — the reports dimensions slice.
+  </Card>
+
+  <Card title="Expenses" icon="receipt" href="/features/expenses">
+    How receipts and expense claims reach your books in the first place.
+  </Card>
+</CardGroup>
