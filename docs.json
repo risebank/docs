@@ -33,6 +33,7 @@
               "features/invoicing",
               "features/payroll",
               "features/reporting",
+              "features/dimensions",
               "features/integrations"
             ]
           },
