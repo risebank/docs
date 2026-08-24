@@ -32,6 +32,7 @@
               "features/expenses",
               "features/invoicing",
               "features/payroll",
+              "features/dimensions",
               "features/reporting",
               "features/integrations"
             ]
