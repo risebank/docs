@@ -70,12 +70,15 @@
                 "group": "Aloitus",
                 "pages": [
                   "fi/introduction",
-                  "fi/account/onboarding"
+                  "fi/account/onboarding",
+                  "fi/support/connect-bank"
                 ]
               },
               {
                 "group": "Ominaisuudet",
-                "pages": []
+                "pages": [
+                  "fi/features/ai-bookkeeping"
+                ]
               },
               {
                 "group": "Oma tili",
