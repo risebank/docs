@@ -40,15 +40,22 @@ Most failed connections come down to a setting in your bank, not a problem in Ri
     - Third-party (PSD2) access is enabled for your company. **This is not on by default at every bank.**
   </Accordion>
 
-  <Accordion title="OP — two access rights required" icon="circle-exclamation">
-    OP does not allow third-party services by default. You need **two** separate access rights, and both matter:
+  <Accordion title="OP — open the access rights in online banking" icon="circle-exclamation">
+    OP does not allow third-party services by default. You open the rights yourself at op.fi — there's no need to call.
 
-    | Access right | Without it |
-    | --- | --- |
-    | Account transaction enquiry | Rise sees no transactions at all |
-    | Balance enquiry | The account appears in Rise with no balance |
+    On the [Users and access rights page](https://www.op.fi/web/corp/auth/asiakkuus/kayttooikeudet) (the interface is in Finnish):
 
-    To enable them, call OP's business customer service and ask for third-party access rights covering **account transaction enquiry and balance enquiry**. OP sends an agreement for electronic signature, and the rights activate roughly an hour after you sign.
+    1. Select the user.
+    2. Open the **Lisää** (More) menu and choose **Muokkaa käyttöoikeuksia** (Edit access rights).
+    3. Pick the account or accounts under **Maksaminen ja laskutus → Tilikohtaiset käyttöoikeudet** (Payments and invoicing → Account-specific access rights).
+    4. Tick both **Tiedonsaanti- ja maksuoikeus** (right to information and payment) and **Maksuoikeus kolmansien osapuolien palvelussa** (payment right in third-party services).
+    5. Choose **Tallenna** (Save).
+
+    **Both selections are needed.** The information right alone is not enough for a third-party service.
+
+    Rights are granted per account and per user, so remember every account you want in Rise and everyone who will connect one — including yourself.
+
+    If the page doesn't show these options, or you can't edit rights, call OP's business customer service. The same thing can be arranged with an agreement sent for electronic signature, which activates in about an hour.
 
     Authentication for OP business customers runs through the **OP Yritysmobiili** app — not the personal OP-Mobiili. Install it on the same phone as Rise.
   </Accordion>
@@ -99,7 +106,7 @@ Most failed connections come down to a setting in your bank, not a problem in Ri
 
 - **Transactions are fetched four times a day** — the maximum PSD2 allows without you authenticating each time.
 - **Your balance updates in real time**, every time you open the app.
-- **No balance showing at all?** A balance-enquiry right is probably missing at your bank.
+- **No balance showing at all?** An access right is probably missing for that account at your bank.
 - **History depends on your bank** — typically 90 days to 24 months, retrieved when you connect.
 - **Consent expires and has to be renewed.** Usually after 180 days, though some banks set it as short as 80. Rise notifies you before it runs out, and renewing takes the same few minutes as the original setup.
 
@@ -157,11 +164,11 @@ The mandate covers euro accounts. Foreign currency accounts are agreed with your
   </Accordion>
 
   <Accordion title="The account is connected but shows no balance">
-    The balance refreshes every time you open the app, so close Rise and reopen it first. If it's still empty, your bank is missing a balance-enquiry right — at OP, that's the second of the two access rights described above.
+    The balance refreshes every time you open the app, so close Rise and reopen it first. If it's still empty, check the access rights at your bank — at OP, both selections must be ticked for that specific account.
   </Accordion>
 
   <Accordion title="Some of my accounts didn't come through">
-    At Nordea, only accounts categorised as transaction, savings or currency are returned. An account categorised as _other_ stays invisible to Rise even though you see it normally in your bank — ask Nordea to change its category. At other banks, check that you actually selected the account during authorisation.
+    At OP, rights are granted per account, so check that the missing account was selected in the access rights. At Nordea, only accounts categorised as transaction, savings or currency are returned — an account categorised as _other_ stays invisible even though you see it normally in your bank. Ask Nordea to change its category.
   </Accordion>
 
   <Accordion title="An invoice is approved but the payment doesn't leave">

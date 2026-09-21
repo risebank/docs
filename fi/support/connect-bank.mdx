@@ -39,15 +39,22 @@ Useimmat epäonnistuneet kytkennät johtuvat pankin asetuksesta, eivät Risen vi
     - Yritykselläsi on sallittu kolmannen osapuolen palvelut. **Tämä ei ole päällä oletuksena kaikissa pankeissa.**
   </Accordion>
 
-  <Accordion title="OP — kaksi käyttöoikeutta tarvitaan" icon="circle-exclamation">
-    OP ei salli kolmannen osapuolen palveluita oletuksena. Tarvitset **kaksi** lisäkäyttöoikeutta, ja molemmilla on merkitystä:
+  <Accordion title="OP — avaa käyttöoikeudet verkkopankissa" icon="circle-exclamation">
+    OP ei salli kolmannen osapuolen palveluita oletuksena. Oikeudet avataan itse op.fi:ssä — soittaa ei tarvitse.
 
-    | Käyttöoikeus | Ilman sitä |
-    | --- | --- |
-    | Tilitapahtumakysely | Rise ei näe tapahtumia lainkaan |
-    | Katekysely | Tili näkyy Risessä ilman saldoa |
+    Tee näin sivulla [Käyttäjät ja käyttöoikeudet](https://www.op.fi/web/corp/auth/asiakkuus/kayttooikeudet):
 
-    Soita OP:n yritysasiakaspalveluun ja pyydä lisäkäyttöoikeuksia kolmannen osapuolen palveluihin: **tilitapahtumakysely ja katekysely**. OP lähettää sopimuksen sähköisesti allekirjoitettavaksi, ja oikeudet aktivoituvat noin tunnin kuluttua allekirjoituksesta.
+    1. Valitse käyttäjä.
+    2. Avaa **Lisää**-valikko ja valitse **Muokkaa käyttöoikeuksia**.
+    3. Valitse haluamasi tili tai tilit kohdasta **Maksaminen ja laskutus → Tilikohtaiset käyttöoikeudet**.
+    4. Lisää valinnat kohtiin **Tiedonsaanti- ja maksuoikeus** sekä **Maksuoikeus kolmansien osapuolien palvelussa**.
+    5. Valitse **Tallenna**.
+
+    **Molemmat valinnat tarvitaan.** Pelkkä tiedonsaantioikeus ei riitä kolmannen osapuolen palvelussa.
+
+    Oikeudet annetaan tilikohtaisesti ja käyttäjäkohtaisesti. Muista siis jokainen tili, jonka haluat Riseen, ja jokainen henkilö, joka tilin kytkee — myös itsesi.
+
+    Jos sivulla ei näy näitä valintoja tai oikeuksien muokkaus ei onnistu, soita OP:n yritysasiakaspalveluun. Sama asia hoituu myös sopimuksella, joka lähetetään sähköisesti allekirjoitettavaksi ja aktivoituu noin tunnissa.
 
     OP:n yritysasiakkaan tunnistautuminen kulkee **OP Yritysmobiilin** kautta — ei henkilöasiakkaiden OP-Mobiilin. Asenna se samaan puhelimeen kuin Rise.
   </Accordion>
@@ -98,7 +105,7 @@ Useimmat epäonnistuneet kytkennät johtuvat pankin asetuksesta, eivät Risen vi
 
 - **Tapahtumat haetaan neljä kertaa vuorokaudessa** — enempää PSD2 ei salli ilman, että tunnistaudut joka kerta erikseen.
 - **Saldo päivittyy reaaliajassa** aina kun avaat sovelluksen.
-- **Jos saldoa ei näy lainkaan**, pankista puuttuu todennäköisesti katekysely-oikeus.
+- **Jos saldoa ei näy lainkaan**, tililtä puuttuu todennäköisesti jokin pankin käyttöoikeuksista.
 - **Historian pituus riippuu pankista** — tyypillisesti 90 päivää tai enintään 24 kuukautta, haetaan kytkennän yhteydessä.
 - **Lupa vanhenee ja se pitää uusia.** Yleensä 180 vuorokauden jälkeen, mutta joillakin pankeilla jo 80. Rise muistuttaa ennen vanhenemista, ja uusiminen vie saman muutaman minuutin kuin ensimmäinen kytkentä.
 
@@ -156,11 +163,11 @@ Valtuutus koskee euromääräisiä tilejä. Valuuttatileistä sovitaan pankin ka
   </Accordion>
 
   <Accordion title="Tili on kytketty mutta saldo puuttuu">
-    Saldo päivittyy aina kun avaat sovelluksen, joten sulje Rise ja avaa se uudelleen. Jos saldo on yhä tyhjä, pankista puuttuu katekysely-oikeus. OP:lla se on kahdesta käyttöoikeudesta jälkimmäinen.
+    Saldo päivittyy aina kun avaat sovelluksen, joten sulje Rise ja avaa se uudelleen. Jos saldo on yhä tyhjä, tarkista pankin käyttöoikeudet — OP:lla molempien valintojen pitää olla päällä juuri sille tilille.
   </Accordion>
 
   <Accordion title="Osa tileistä ei tullut mukaan">
-    Nordea palauttaa vain tilit, joiden kategoria on käyttötili, säästötili tai valuuttatili. Kategoriassa _muu_ oleva tili pysyy Riselle näkymättömänä, vaikka näet sen normaalisti pankissasi — pyydä Nordeaa vaihtamaan kategoria. Muissa pankeissa tarkista, että valitsit tilin valtuutuksen yhteydessä.
+    OP:lla oikeudet annetaan tilikohtaisesti, joten tarkista, että puuttuva tili on valittu käyttöoikeuksissa. Nordea puolestaan palauttaa vain tilit, joiden kategoria on käyttötili, säästötili tai valuuttatili — kategoriassa _muu_ oleva tili pysyy näkymättömänä, vaikka näet sen normaalisti pankissasi. Pyydä Nordeaa vaihtamaan kategoria.
   </Accordion>
 
   <Accordion title="Lasku on hyväksytty mutta maksu ei lähde">
