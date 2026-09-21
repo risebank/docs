@@ -80,7 +80,9 @@
                   "fi/features/ai-bookkeeping",
                   "fi/features/expenses",
                   "fi/features/invoicing",
-                  "fi/features/payroll"
+                  "fi/features/payroll",
+                  "fi/features/dimensions",
+                  "fi/features/reporting"
                 ]
               },
               {
