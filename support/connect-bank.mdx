@@ -40,41 +40,55 @@ Most failed connections come down to a setting in your bank, not a problem in Ri
     - Third-party (PSD2) access is enabled for your company. **This is not on by default at every bank.**
   </Accordion>
 
-  <Accordion title="OP — open the access rights in online banking" icon="circle-exclamation">
-    OP does not allow third-party services by default. You open the rights yourself at op.fi — there's no need to call.
+  <Accordion title="OP — two access rights required" icon="circle-exclamation">
+    OP does not allow third-party services by default. You need **two** separate access rights, and both matter:
 
-    On the [Users and access rights page](https://www.op.fi/web/corp/auth/asiakkuus/kayttooikeudet) (the interface is in Finnish):
+    | Access right | Without it |
+    | --- | --- |
+    | Account transaction enquiry | Rise sees no transactions at all |
+    | Balance enquiry | The account appears in Rise with no balance |
 
-    1. Select the user.
-    2. Open the **Lisää** (More) menu and choose **Muokkaa käyttöoikeuksia** (Edit access rights).
-    3. Pick the account or accounts under **Maksaminen ja laskutus → Tilikohtaiset käyttöoikeudet** (Payments and invoicing → Account-specific access rights).
-    4. Tick both **Tiedonsaanti- ja maksuoikeus** (right to information and payment) and **Maksuoikeus kolmansien osapuolien palvelussa** (payment right in third-party services).
-    5. Choose **Tallenna** (Save).
-
-    **Both selections are needed.** The information right alone is not enough for a third-party service.
-
-    Rights are granted per account and per user, so remember every account you want in Rise and everyone who will connect one — including yourself.
-
-    If the page doesn't show these options, or you can't edit rights, call OP's business customer service. The same thing can be arranged with an agreement sent for electronic signature, which activates in about an hour.
+    To enable them, call OP's business customer service and ask for third-party access rights covering **account transaction enquiry and balance enquiry**. OP sends an agreement for electronic signature, and the rights activate roughly an hour after you sign.
 
     Authentication for OP business customers runs through the **OP Yritysmobiili** app — not the personal OP-Mobiili. Install it on the same phone as Rise.
   </Accordion>
 
-  <Accordion title="Nordea — Business or Corporate Netbank">
-    Nordea runs two business services and you pick one in Rise. Choosing the wrong one produces the same error as a missing access right, so settle this first.
+  <Accordion title="Nordea — which service are you on?" icon="circle-question">
+    Nordea runs two separate business services, and you pick one in Rise. Choosing the wrong one produces the same error as a missing access right, so settle this before assuming something is broken.
 
-    If you log in to Nordea Business on your phone or in the browser, you're on **Nordea Business** — this is most Rise customers. Corporate Netbank is a separate service you would know you had: it's agreed with a cash management contact, not opened online.
+    | Service | Who uses it |
+    | --- | --- |
+    | **Nordea Business** | Small and mid-sized companies. **This is most Rise customers.** |
+    | Nordea Corporate Netbank | Larger companies with a separate Corporate Netbank agreement |
 
-    **Neither one requires you to order anything.** Nordea needs no extra agreement for third-party access, and since 5 October 2022 the right to authorise it is included in administrator rights by default. What differs is who may authorise and how they identify themselves.
+    If you log in to Nordea Business on your phone or in the browser, you're on Nordea Business. Corporate Netbank is a separate service you would know you had — it's agreed with a cash management contact, not opened online.
 
-    |  | Nordea Business | Corporate Netbank |
-    | --- | --- | --- |
-    | **Who authorises** | Anyone authorised for the agreement. The main user (_pääkäyttäjä_) has full rights by default; other users have only what the main user granted them. A sole trader is automatically the main user. | An administrator with confirm rights. Under a two-administrator rule, **both must be present during the authorisation** — alone it cannot be completed. |
-    | **How you identify** | Your normal Nordea Business login | The **Logon ID** from _My profile_ — not a personal identity number. Finnish login also uses the 8-digit business ID with no hyphen. |
-    | **Also needed** | Nothing | The **agreement number** from the Corporate Netbank interface, and the Nordea ID app activated for that administrator |
-    | **Consent lasts** | Up to 180 days | Up to 90 days |
+    Follow whichever of the two sections below matches.
+  </Accordion>
 
-    **One rule applies to both:** only accounts categorised as transaction, savings or currency are returned. An account categorised as _other_ stays invisible to Rise even though you see it normally in your bank. If an account is missing after an otherwise successful connection, this is usually why — ask Nordea to change its category.
+  <Accordion title="Nordea Business — what needs to be in place">
+    **There is nothing to order.** Nordea requires no extra agreement for third-party access on Nordea Business. Unlike OP, there is no access right to request and no phone call to make.
+
+    Two things have to be true:
+
+    - **You are authorised for the agreement in Nordea Business.** The main user (_pääkäyttäjä_) has full rights by default and can always authorise. Other users have only the rights the main user has granted them, so if authorisation fails, check your own rights first. A sole trader is automatically the main user.
+    - **The account sits in a category the interface returns** — transaction, savings, or currency. Accounts categorised as _other_ are never returned, even though you see them normally in Nordea Business. If an account is missing after an otherwise successful connection, this is usually why. Ask Nordea to change the account's category.
+
+    Consent lasts up to 180 days.
+  </Accordion>
+
+  <Accordion title="Nordea Corporate Netbank — what needs to be in place">
+    Nothing to order here either. Since **5 October 2022**, the right to authorise third-party access is included in Corporate Netbank administrator rights by default, with no separate registration or power of attorney.
+
+    What must be true:
+
+    - **A Corporate Netbank administrator with confirm rights** performs the authorisation. If your company uses a two-administrator rule, **both must be present during it** — one person alone cannot complete the authorisation, and this is a common reason it stalls.
+    - **That administrator has the Nordea ID app activated.**
+    - **Identify with the Logon ID**, found under _My profile_ in Corporate Netbank — not a personal identity number. Finnish business login also uses the 8-digit business ID with no hyphen.
+    - **The agreement number** from the Corporate Netbank interface identifies which agreement the request targets.
+    - **Account categories apply here too** — accounts categorised as _other_ are not returned.
+
+    Consent on the corporate flow is capped at **90 days**, shorter than on Nordea Business.
   </Accordion>
 </AccordionGroup>
 
@@ -106,7 +120,7 @@ Most failed connections come down to a setting in your bank, not a problem in Ri
 
 - **Transactions are fetched four times a day** — the maximum PSD2 allows without you authenticating each time.
 - **Your balance updates in real time**, every time you open the app.
-- **No balance showing at all?** An access right is probably missing for that account at your bank.
+- **No balance showing at all?** A balance-enquiry right is probably missing at your bank.
 - **History depends on your bank** — typically 90 days to 24 months, retrieved when you connect.
 - **Consent expires and has to be renewed.** Usually after 180 days, though some banks set it as short as 80. Rise notifies you before it runs out, and renewing takes the same few minutes as the original setup.
 
@@ -164,11 +178,11 @@ The mandate covers euro accounts. Foreign currency accounts are agreed with your
   </Accordion>
 
   <Accordion title="The account is connected but shows no balance">
-    The balance refreshes every time you open the app, so close Rise and reopen it first. If it's still empty, check the access rights at your bank — at OP, both selections must be ticked for that specific account.
+    The balance refreshes every time you open the app, so close Rise and reopen it first. If it's still empty, your bank is missing a balance-enquiry right — at OP, that's the second of the two access rights described above.
   </Accordion>
 
   <Accordion title="Some of my accounts didn't come through">
-    At OP, rights are granted per account, so check that the missing account was selected in the access rights. At Nordea, only accounts categorised as transaction, savings or currency are returned — an account categorised as _other_ stays invisible even though you see it normally in your bank. Ask Nordea to change its category.
+    At Nordea, only accounts categorised as transaction, savings or currency are returned. An account categorised as _other_ stays invisible to Rise even though you see it normally in your bank — ask Nordea to change its category. At other banks, check that you actually selected the account during authorisation.
   </Accordion>
 
   <Accordion title="An invoice is approved but the payment doesn't leave">
