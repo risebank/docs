@@ -77,7 +77,8 @@
               {
                 "group": "Ominaisuudet",
                 "pages": [
-                  "fi/features/ai-bookkeeping"
+                  "fi/features/ai-bookkeeping",
+                  "fi/features/expenses"
                 ]
               },
               {
