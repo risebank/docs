@@ -53,17 +53,42 @@ Most failed connections come down to a setting in your bank, not a problem in Ri
     Authentication for OP business customers runs through the **OP Yritysmobiili** app — not the personal OP-Mobiili. Install it on the same phone as Rise.
   </Accordion>
 
-  <Accordion title="Nordea — pick the right service">
-    Nordea runs separate services for different customer sizes, and you choose one in Rise:
+  <Accordion title="Nordea — which service are you on?" icon="circle-question">
+    Nordea runs two separate business services, and you pick one in Rise. Choosing the wrong one produces the same error as a missing access right, so settle this before assuming something is broken.
 
     | Service | Who uses it |
     | --- | --- |
-    | Nordea Business | Small and mid-sized companies |
-    | Nordea Corporate Netbank | Larger companies with a Corporate Netbank agreement |
+    | **Nordea Business** | Small and mid-sized companies. **This is most Rise customers.** |
+    | Nordea Corporate Netbank | Larger companies with a separate Corporate Netbank agreement |
 
-    Picking the wrong one produces the same error as a missing access right, so try the other option before assuming something is broken.
+    If you log in to Nordea Business on your phone or in the browser, you're on Nordea Business. Corporate Netbank is a separate service you would know you had — it's agreed with a cash management contact, not opened online.
 
-    Corporate Netbank customers also need the **agreement number** from the Corporate Netbank interface, and authorisation is done by an administrator using their **Logon ID** (found under _My profile_) — not a personal identity number.
+    Follow whichever of the two sections below matches.
+  </Accordion>
+
+  <Accordion title="Nordea Business — what needs to be in place">
+    **There is nothing to order.** Nordea requires no extra agreement for third-party access on Nordea Business. Unlike OP, there is no access right to request and no phone call to make.
+
+    Two things have to be true:
+
+    - **You are authorised for the agreement in Nordea Business.** The main user (_pääkäyttäjä_) has full rights by default and can always authorise. Other users have only the rights the main user has granted them, so if authorisation fails, check your own rights first. A sole trader is automatically the main user.
+    - **The account sits in a category the interface returns** — transaction, savings, or currency. Accounts categorised as _other_ are never returned, even though you see them normally in Nordea Business. If an account is missing after an otherwise successful connection, this is usually why. Ask Nordea to change the account's category.
+
+    Consent lasts up to 180 days.
+  </Accordion>
+
+  <Accordion title="Nordea Corporate Netbank — what needs to be in place">
+    Nothing to order here either. Since **5 October 2022**, the right to authorise third-party access is included in Corporate Netbank administrator rights by default, with no separate registration or power of attorney.
+
+    What must be true:
+
+    - **A Corporate Netbank administrator with confirm rights** performs the authorisation. If your company uses a two-administrator rule, **both must be present during it** — one person alone cannot complete the authorisation, and this is a common reason it stalls.
+    - **That administrator has the Nordea ID app activated.**
+    - **Identify with the Logon ID**, found under _My profile_ in Corporate Netbank — not a personal identity number. Finnish business login also uses the 8-digit business ID with no hyphen.
+    - **The agreement number** from the Corporate Netbank interface identifies which agreement the request targets.
+    - **Account categories apply here too** — accounts categorised as _other_ are not returned.
+
+    Consent on the corporate flow is capped at **90 days**, shorter than on Nordea Business.
   </Accordion>
 </AccordionGroup>
 
@@ -154,6 +179,10 @@ The mandate covers euro accounts. Foreign currency accounts are agreed with your
 
   <Accordion title="The account is connected but shows no balance">
     The balance refreshes every time you open the app, so close Rise and reopen it first. If it's still empty, your bank is missing a balance-enquiry right — at OP, that's the second of the two access rights described above.
+  </Accordion>
+
+  <Accordion title="Some of my accounts didn't come through">
+    At Nordea, only accounts categorised as transaction, savings or currency are returned. An account categorised as _other_ stays invisible to Rise even though you see it normally in your bank — ask Nordea to change its category. At other banks, check that you actually selected the account during authorisation.
   </Accordion>
 
   <Accordion title="An invoice is approved but the payment doesn't leave">
