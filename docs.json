@@ -15,7 +15,78 @@
   "navigation": {
     "languages": [
       {
-        "language": "en"
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "introduction",
+                  "account/onboarding",
+                  "support/connect-bank"
+                ]
+              },
+              {
+                "group": "Core Features",
+                "pages": [
+                  "features/ai-bookkeeping",
+                  "features/expenses",
+                  "features/invoicing",
+                  "features/payroll",
+                  "features/dimensions",
+                  "features/reporting",
+                  "features/integrations"
+                ]
+              },
+              {
+                "group": "Your Account",
+                "pages": [
+                  "features/mobile-app",
+                  "features/bank-connections",
+                  "account/accountant-team",
+                  "account/compliance"
+                ]
+              },
+              {
+                "group": "Support",
+                "pages": [
+                  "support/faq",
+                  "support/contact"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "fi",
+        "tabs": [
+          {
+            "tab": "Dokumentaatio",
+            "groups": [
+              {
+                "group": "Aloitus",
+                "pages": [
+                  "fi/introduction"
+                ]
+              },
+              {
+                "group": "Ominaisuudet",
+                "pages": []
+              },
+              {
+                "group": "Oma tili",
+                "pages": []
+              },
+              {
+                "group": "Tuki",
+                "pages": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
