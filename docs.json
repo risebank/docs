@@ -69,7 +69,8 @@
               {
                 "group": "Aloitus",
                 "pages": [
-                  "fi/introduction"
+                  "fi/introduction",
+                  "fi/account/onboarding"
                 ]
               },
               {
