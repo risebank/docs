@@ -40,55 +40,41 @@ Useimmat epäonnistuneet kytkennät johtuvat pankin asetuksesta, eivät Risen vi
     - Yritykselläsi on sallittu kolmannen osapuolen palvelut. **Tämä ei ole päällä oletuksena kaikissa pankeissa.**
   </Accordion>
 
-  <Accordion title="OP — kaksi käyttöoikeutta tarvitaan" icon="circle-exclamation">
-    OP ei salli kolmannen osapuolen palveluita oletuksena. Tarvitset **kaksi** lisäkäyttöoikeutta, ja molemmilla on merkitystä:
+  <Accordion title="OP — avaa käyttöoikeudet verkkopankissa" icon="circle-exclamation">
+    OP ei salli kolmannen osapuolen palveluita oletuksena. Oikeudet avataan itse op.fi:ssä — soittaa ei tarvitse.
 
-    | Käyttöoikeus | Ilman sitä |
-    | --- | --- |
-    | Tilitapahtumakysely | Rise ei näe tapahtumia lainkaan |
-    | Katekysely | Tili näkyy Risessä ilman saldoa |
+    Tee näin sivulla [Käyttäjät ja käyttöoikeudet](https://www.op.fi/web/corp/auth/asiakkuus/kayttooikeudet):
 
-    Soita OP:n yritysasiakaspalveluun ja pyydä lisäkäyttöoikeuksia kolmannen osapuolen palveluihin: **tilitapahtumakysely ja katekysely**. OP lähettää sopimuksen sähköisesti allekirjoitettavaksi, ja oikeudet aktivoituvat noin tunnin kuluttua allekirjoituksesta.
+    1. Valitse käyttäjä.
+    2. Avaa **Lisää**-valikko ja valitse **Muokkaa käyttöoikeuksia**.
+    3. Valitse haluamasi tili tai tilit kohdasta **Maksaminen ja laskutus → Tilikohtaiset käyttöoikeudet**.
+    4. Lisää valinnat kohtiin **Tiedonsaanti- ja maksuoikeus** sekä **Maksuoikeus kolmansien osapuolien palvelussa**.
+    5. Valitse **Tallenna**.
+
+    **Molemmat valinnat tarvitaan.** Pelkkä tiedonsaantioikeus ei riitä kolmannen osapuolen palvelussa.
+
+    Oikeudet annetaan tilikohtaisesti ja käyttäjäkohtaisesti. Muista siis jokainen tili, jonka haluat Riseen, ja jokainen henkilö, joka tilin kytkee — myös itsesi.
+
+    Jos sivulla ei näy näitä valintoja tai oikeuksien muokkaus ei onnistu, soita OP:n yritysasiakaspalveluun. Sama asia hoituu myös sopimuksella, joka lähetetään sähköisesti allekirjoitettavaksi ja aktivoituu noin tunnissa.
 
     OP:n yritysasiakkaan tunnistautuminen kulkee **OP Yritysmobiilin** kautta — ei henkilöasiakkaiden OP-Mobiilin. Asenna se samaan puhelimeen kuin Rise.
   </Accordion>
 
-  <Accordion title="Nordea — kumpi palvelu sinulla on?" icon="circle-question">
-    Nordealla on kaksi eri yrityspalvelua, ja valitset niistä yhden Risessä. Väärä valinta antaa saman virheilmoituksen kuin puuttuva käyttöoikeus, joten selvitä tämä ennen kuin epäilet vikaa.
+  <Accordion title="Nordea — Business vai Corporate Netbank">
+    Nordealla on kaksi yrityspalvelua, ja valitset niistä yhden Risessä. Väärä valinta antaa saman virheilmoituksen kuin puuttuva käyttöoikeus, joten selvitä tämä ensin.
 
-    | Palvelu | Kenelle |
-    | --- | --- |
-    | **Nordea Business** | Pienet ja keskisuuret yritykset. **Valtaosa Risen asiakkaista on tässä.** |
-    | Nordea Corporate Netbank | Suuremmat yritykset, joilla on erillinen Corporate Netbank -sopimus |
+    Jos kirjaudut Nordea Businessiin puhelimella tai selaimessa, palvelusi on **Nordea Business** — näin on valtaosalla Risen asiakkaista. Corporate Netbank on erillinen palvelu, jonka olemassaolon tietäisit: se sovitaan cash management -yhteyshenkilön kanssa, eikä sitä avata verkossa.
 
-    Jos kirjaudut Nordea Businessiin puhelimella tai selaimessa, palvelusi on Nordea Business. Corporate Netbank on erillinen palvelu, jonka olemassaolon tietäisit — se sovitaan cash management -yhteyshenkilön kanssa, eikä sitä avata verkossa.
+    **Kummassakaan ei tarvitse tilata mitään.** Nordea ei vaadi erillistä sopimusta kolmannen osapuolen palveluille, ja 5.10.2022 alkaen valtuutusoikeus sisältyy oletuksena pääkäyttäjäoikeuksiin. Ero on siinä, kuka saa valtuuttaa ja miten hän tunnistautuu.
 
-    Jatka sen mukaan, kumpi alla olevista osioista koskee sinua.
-  </Accordion>
+    |  | Nordea Business | Corporate Netbank |
+    | --- | --- | --- |
+    | **Kuka valtuuttaa** | Kuka tahansa, jolla on oikeus sopimukseen. Pääkäyttäjällä on oletuksena täydet oikeudet; muilla vain ne, jotka pääkäyttäjä on antanut. Itsenäinen ammatinharjoittaja on automaattisesti pääkäyttäjä. | Pääkäyttäjä, jolla on vahvistusoikeus. Kahden pääkäyttäjän säännöllä **molempien on oltava paikalla valtuutuksen aikana** — yksin sitä ei saa vietyä läpi. |
+    | **Miten tunnistaudut** | Tavallisilla Nordea Business -tunnuksillasi | **Logon ID** kohdasta _My profile_ — ei henkilötunnus. Suomalaisessa kirjautumisessa käytetään lisäksi 8-numeroista Y-tunnusta ilman väliviivaa. |
+    | **Lisäksi tarvitaan** | Ei mitään | **Sopimusnumero** Corporate Netbankin käyttöliittymästä sekä Nordea ID -sovellus aktivoituna kyseisellä pääkäyttäjällä |
+    | **Luvan kesto** | Enintään 180 vrk | Enintään 90 vrk |
 
-  <Accordion title="Nordea Business — mitä pitää olla kunnossa">
-    **Mitään ei tarvitse tilata.** Nordea ei vaadi Nordea Businessissa erillistä sopimusta kolmannen osapuolen palveluille. Toisin kuin OP:lla, mitään käyttöoikeutta ei pyydetä eikä aspaan tarvitse soittaa.
-
-    Kahden asian pitää olla kunnossa:
-
-    - **Sinulla on oikeus sopimukseen Nordea Businessissa.** Pääkäyttäjällä on oletuksena täydet oikeudet ja hän voi aina valtuuttaa. Muilla käyttäjillä on vain ne oikeudet, jotka pääkäyttäjä on antanut — jos valtuutus ei onnistu, tarkista ensin omat oikeutesi. Itsenäinen ammatinharjoittaja on automaattisesti pääkäyttäjä.
-    - **Tili on kategoriassa, jonka rajapinta palauttaa** — käyttötili, säästötili tai valuuttatili. Kategoriassa _muu_ olevia tilejä ei palauteta koskaan, vaikka näet ne normaalisti Nordea Businessissa. Jos tili puuttuu muuten onnistuneen kytkennän jälkeen, syy on yleensä tämä. Pyydä Nordeaa vaihtamaan tilin kategoria.
-
-    Lupa on voimassa enintään 180 vuorokautta.
-  </Accordion>
-
-  <Accordion title="Nordea Corporate Netbank — mitä pitää olla kunnossa">
-    Tässäkään ei tilata mitään. **5.10.2022 alkaen** oikeus valtuuttaa kolmannen osapuolen palveluita sisältyy oletuksena Corporate Netbankin pääkäyttäjäoikeuksiin, eikä erillistä rekisteröitymistä tai valtakirjaa tarvita.
-
-    Mitä pitää olla kunnossa:
-
-    - **Valtuutuksen tekee Corporate Netbankin pääkäyttäjä, jolla on vahvistusoikeus.** Jos yrityksellänne on kahden pääkäyttäjän sääntö, **molempien on oltava paikalla valtuutuksen aikana** — yksin sitä ei saa vietyä läpi, ja tämä on yleinen syy siihen, että prosessi jää jumiin.
-    - **Pääkäyttäjällä on Nordea ID -sovellus aktivoituna.**
-    - **Tunnisteena käytetään Logon ID:tä**, joka löytyy Corporate Netbankin kohdasta _My profile_ — ei henkilötunnusta. Suomalaisessa yrityskirjautumisessa käytetään lisäksi 8-numeroista Y-tunnusta ilman väliviivaa.
-    - **Sopimusnumero** Corporate Netbankin käyttöliittymästä kertoo, mihin sopimukseen pyyntö kohdistuu.
-    - **Tilien kategoriat pätevät tässäkin** — kategoriassa _muu_ olevia tilejä ei palauteta.
-
-    Corporate-puolella lupa on voimassa enintään **90 vuorokautta**, eli lyhyemmän ajan kuin Nordea Businessissa.
+    **Yksi sääntö koskee molempia:** rajapinta palauttaa vain tilit, joiden kategoria on käyttötili, säästötili tai valuuttatili. Kategoriassa _muu_ oleva tili pysyy Riselle näkymättömänä, vaikka näet sen normaalisti pankissasi. Jos tili puuttuu muuten onnistuneen kytkennän jälkeen, syy on yleensä tämä — pyydä Nordeaa vaihtamaan kategoria.
   </Accordion>
 </AccordionGroup>
 
@@ -120,7 +106,7 @@ Useimmat epäonnistuneet kytkennät johtuvat pankin asetuksesta, eivät Risen vi
 
 - **Tapahtumat haetaan neljä kertaa vuorokaudessa** — enempää PSD2 ei salli ilman, että tunnistaudut joka kerta erikseen.
 - **Saldo päivittyy reaaliajassa** aina kun avaat sovelluksen.
-- **Jos saldoa ei näy lainkaan**, pankista puuttuu todennäköisesti katekysely-oikeus.
+- **Jos saldoa ei näy lainkaan**, tililtä puuttuu todennäköisesti jokin pankin käyttöoikeuksista.
 - **Historian pituus riippuu pankista** — tyypillisesti 90 päivää tai enintään 24 kuukautta, haetaan kytkennän yhteydessä.
 - **Lupa vanhenee ja se pitää uusia.** Yleensä 180 vuorokauden jälkeen, mutta joillakin pankeilla jo 80. Rise muistuttaa ennen vanhenemista, ja uusiminen vie saman muutaman minuutin kuin ensimmäinen kytkentä.
 
@@ -178,11 +164,11 @@ Valtuutus koskee euromääräisiä tilejä. Valuuttatileistä sovitaan pankin ka
   </Accordion>
 
   <Accordion title="Tili on kytketty mutta saldo puuttuu">
-    Saldo päivittyy aina kun avaat sovelluksen, joten sulje Rise ja avaa se uudelleen. Jos saldo on yhä tyhjä, pankista puuttuu katekysely-oikeus. OP:lla se on kahdesta käyttöoikeudesta jälkimmäinen.
+    Saldo päivittyy aina kun avaat sovelluksen, joten sulje Rise ja avaa se uudelleen. Jos saldo on yhä tyhjä, tarkista pankin käyttöoikeudet — OP:lla molempien valintojen pitää olla päällä juuri sille tilille.
   </Accordion>
 
   <Accordion title="Osa tileistä ei tullut mukaan">
-    Nordea palauttaa vain tilit, joiden kategoria on käyttötili, säästötili tai valuuttatili. Kategoriassa _muu_ oleva tili pysyy Riselle näkymättömänä, vaikka näet sen normaalisti pankissasi — pyydä Nordeaa vaihtamaan kategoria. Muissa pankeissa tarkista, että valitsit tilin valtuutuksen yhteydessä.
+    OP:lla oikeudet annetaan tilikohtaisesti, joten tarkista, että puuttuva tili on valittu käyttöoikeuksissa. Nordea puolestaan palauttaa vain tilit, joiden kategoria on käyttötili, säästötili tai valuuttatili — kategoriassa _muu_ oleva tili pysyy näkymättömänä, vaikka näet sen normaalisti pankissasi. Pyydä Nordeaa vaihtamaan kategoria.
   </Accordion>
 
   <Accordion title="Lasku on hyväksytty mutta maksu ei lähde">
