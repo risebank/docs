@@ -90,12 +90,16 @@
                 "group": "Oma tili",
                 "pages": [
                   "fi/features/mobile-app",
-                  "fi/features/bank-connections"
+                  "fi/features/bank-connections",
+                  "fi/account/accountant-team",
+                  "fi/account/compliance"
                 ]
               },
               {
                 "group": "Tuki",
-                "pages": []
+                "pages": [
+                  "fi/support/faq"
+                ]
               }
             ]
           }
