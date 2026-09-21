@@ -92,10 +92,11 @@ Useimmat epäonnistuneet kytkennät johtuvat pankin asetuksesta, eivät Risen vi
 
 ## Kytkennän jälkeen
 
-- **Tapahtumat tulevat aikataulussa, eivät heti.** Rise hakee ne kolme kertaa vuorokaudessa. PSD2 rajoittaa automaattisen haun neljään kertaan vuorokaudessa, joten jatkuvaa reaaliaikaisuutta ei ole tarjolla keneltäkään.
-- **Puuttuva saldo ensimmäisenä päivänä on normaalia.** Jos saldo puuttuu vielä vuorokauden jälkeen, pankista puuttuu todennäköisesti katekysely-oikeus.
+- **Tapahtumat haetaan neljä kertaa vuorokaudessa** — enempää PSD2 ei salli ilman, että tunnistaudut joka kerta erikseen.
+- **Saldo päivittyy reaaliajassa** aina kun avaat sovelluksen.
+- **Jos saldoa ei näy lainkaan**, pankista puuttuu todennäköisesti katekysely-oikeus.
 - **Historian pituus riippuu pankista** — tyypillisesti 90 päivää tai enintään 24 kuukautta, haetaan kytkennän yhteydessä.
-- **Lupa on voimassa noin 180 vuorokautta.** Rise muistuttaa ennen vanhenemista, ja uusiminen vie saman muutaman minuutin kuin ensimmäinen kytkentä.
+- **Lupa vanhenee ja se pitää uusia.** Yleensä 180 vuorokauden jälkeen, mutta joillakin pankeilla jo 80. Rise muistuttaa ennen vanhenemista, ja uusiminen vie saman muutaman minuutin kuin ensimmäinen kytkentä.
 
 ## Ota maksaminen käyttöön
 
@@ -129,6 +130,7 @@ Jos pankki kysyy aineistolajeja, vastaus on:
 | Aineistolaji | Mihin |
 | --- | --- |
 | Maksuaineisto (SEPA pain.001) | Ostolaskujen maksu |
+| Maksuaineiston paluutieto (pain.002) | Pankin kuittaus siitä, hyväksyttiinkö vai hylättiinkö maksu |
 | Tiliote (camt.053) | Kirjanpidon täsmäytys |
 | Viitesuoritukset (camt.054) | Myyntilaskujen kuittaus maksetuiksi |
 
@@ -150,7 +152,7 @@ Valtuutus koskee euromääräisiä tilejä. Valuuttatileistä sovitaan pankin ka
   </Accordion>
 
   <Accordion title="Tili on kytketty mutta saldo puuttuu">
-    Odota seuraavaa hakua. Jos saldo puuttuu vielä vuorokauden jälkeen, pankista puuttuu katekysely-oikeus. OP:lla se on kahdesta käyttöoikeudesta jälkimmäinen.
+    Saldo päivittyy aina kun avaat sovelluksen, joten sulje Rise ja avaa se uudelleen. Jos saldo on yhä tyhjä, pankista puuttuu katekysely-oikeus. OP:lla se on kahdesta käyttöoikeudesta jälkimmäinen.
   </Accordion>
 
   <Accordion title="Lasku on hyväksytty mutta maksu ei lähde">
@@ -158,7 +160,7 @@ Valtuutus koskee euromääräisiä tilejä. Valuuttatileistä sovitaan pankin ka
   </Accordion>
 
   <Accordion title="Yhteys on vanhentunut">
-    PSD2-lupa pitää uusia määräajoin, tyypillisesti 180 vuorokauden välein. Mene kohtaan **Asetukset → Pankkitilit**, etsi tili ja paina **Yhdistä uudelleen**.
+    PSD2-lupa pitää uusia määräajoin, yleensä 180 vuorokauden välein — joillakin pankeilla jo 80. Mene kohtaan **Asetukset → Pankkitilit**, etsi tili ja paina **Yhdistä uudelleen**.
   </Accordion>
 
   <Accordion title="Pankkiani ei löydy listalta">

@@ -93,10 +93,11 @@ Most failed connections come down to a setting in your bank, not a problem in Ri
 
 ## After connecting
 
-- **Transactions arrive on a schedule, not instantly.** Rise fetches them three times a day. PSD2 caps unattended fetches at four per 24 hours, so continuous real-time sync isn't available from any provider.
-- **A missing balance on day one is normal.** If it's still missing after a day, a balance-enquiry right is probably missing at your bank.
+- **Transactions are fetched four times a day** — the maximum PSD2 allows without you authenticating each time.
+- **Your balance updates in real time**, every time you open the app.
+- **No balance showing at all?** A balance-enquiry right is probably missing at your bank.
 - **History depends on your bank** — typically 90 days to 24 months, retrieved when you connect.
-- **Consent expires after about 180 days.** Rise notifies you before it does, and renewing takes the same few minutes as the original setup.
+- **Consent expires and has to be renewed.** Usually after 180 days, though some banks set it as short as 80. Rise notifies you before it runs out, and renewing takes the same few minutes as the original setup.
 
 ## Enable payments
 
@@ -130,6 +131,7 @@ If your bank asks which data types to include:
 | Data type | Used for |
 | --- | --- |
 | Payment file (SEPA pain.001) | Paying supplier invoices |
+| Payment status report (pain.002) | Telling Rise whether the bank accepted or rejected each payment |
 | Bank statement (camt.053) | Reconciling the books |
 | Reference payments (camt.054) | Marking sales invoices paid |
 
@@ -151,7 +153,7 @@ The mandate covers euro accounts. Foreign currency accounts are agreed with your
   </Accordion>
 
   <Accordion title="The account is connected but shows no balance">
-    Wait for the next scheduled fetch. If the balance is still missing after a day, your bank is missing a balance-enquiry right — at OP, that's the second of the two access rights described above.
+    The balance refreshes every time you open the app, so close Rise and reopen it first. If it's still empty, your bank is missing a balance-enquiry right — at OP, that's the second of the two access rights described above.
   </Accordion>
 
   <Accordion title="An invoice is approved but the payment doesn't leave">
@@ -159,7 +161,7 @@ The mandate covers euro accounts. Foreign currency accounts are agreed with your
   </Accordion>
 
   <Accordion title="My connection expired">
-    Open banking consent needs periodic renewal — typically every 180 days. Go to **Settings → Bank Connections**, find the account, and click **Reconnect**.
+    Open banking consent needs periodic renewal — usually every 180 days, though some banks set it as short as 80. Go to **Settings → Bank Connections**, find the account, and click **Reconnect**.
   </Accordion>
 
   <Accordion title="My bank isn't in the list">
