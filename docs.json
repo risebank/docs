@@ -89,7 +89,8 @@
               {
                 "group": "Oma tili",
                 "pages": [
-                  "fi/features/mobile-app"
+                  "fi/features/mobile-app",
+                  "fi/features/bank-connections"
                 ]
               },
               {
