@@ -13,45 +13,95 @@
   },
   "favicon": "https://media.brand.dev/a7831388-f8ae-4a33-bdd4-67daf663740d.png",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "account/onboarding",
-              "support/connect-bank"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "introduction",
+                  "account/onboarding",
+                  "support/connect-bank"
+                ]
+              },
+              {
+                "group": "Core Features",
+                "pages": [
+                  "features/ai-bookkeeping",
+                  "features/expenses",
+                  "features/invoicing",
+                  "features/payroll",
+                  "features/dimensions",
+                  "features/reporting",
+                  "features/integrations"
+                ]
+              },
+              {
+                "group": "Your Account",
+                "pages": [
+                  "features/mobile-app",
+                  "features/bank-connections",
+                  "account/accountant-team",
+                  "account/compliance"
+                ]
+              },
+              {
+                "group": "Support",
+                "pages": [
+                  "support/faq",
+                  "support/contact"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "fi",
+        "tabs": [
           {
-            "group": "Core Features",
-            "pages": [
-              "features/ai-bookkeeping",
-              "features/expenses",
-              "features/invoicing",
-              "features/payroll",
-              "features/dimensions",
-              "features/reporting",
-              "features/dimensions",
-              "features/integrations"
-            ]
-          },
-          {
-            "group": "Your Account",
-            "pages": [
-              "features/mobile-app",
-              "features/bank-connections",
-              "account/accountant-team",
-              "account/compliance"
-            ]
-          },
-          {
-            "group": "Support",
-            "pages": [
-              "support/faq",
-              "support/contact"
+            "tab": "Dokumentaatio",
+            "groups": [
+              {
+                "group": "Aloitus",
+                "pages": [
+                  "fi/introduction",
+                  "fi/account/onboarding",
+                  "fi/support/connect-bank"
+                ]
+              },
+              {
+                "group": "Ominaisuudet",
+                "pages": [
+                  "fi/features/ai-bookkeeping",
+                  "fi/features/expenses",
+                  "fi/features/invoicing",
+                  "fi/features/payroll",
+                  "fi/features/dimensions",
+                  "fi/features/reporting",
+                  "fi/features/integrations"
+                ]
+              },
+              {
+                "group": "Oma tili",
+                "pages": [
+                  "fi/features/mobile-app",
+                  "fi/features/bank-connections",
+                  "fi/account/accountant-team",
+                  "fi/account/compliance"
+                ]
+              },
+              {
+                "group": "Tuki",
+                "pages": [
+                  "fi/support/faq",
+                  "fi/support/contact"
+                ]
+              }
             ]
           }
         ]

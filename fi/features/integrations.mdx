@@ -1,0 +1,111 @@
+---
+title: "Integraatiot: liitä Rise työkaluihisi"
+sidebarTitle: "Integraatiot"
+description: "Miten Rise liittyy kolmansien osapuolten automaatioalustoihin rajapinnan kautta, ja mitä kukin kumppani tuo talousprosesseihisi."
+---
+
+Risessä on yksi rajapinta, jonka kautta kolmansien osapuolten alustat lukevat taloustietojasi ja käynnistävät toimintoja puolestasi. Tämä sivu kertoo, miten integraatiot on rakennettu, mikä rooli kullakin osapuolella on ja missä vastuu kulkee Risen ja liitetyn palvelun välillä.
+
+## Rakenne lyhyesti
+
+Rise on yhteyden toisessa päässä. Toisessa ovat automaatioalustat, jotka kutsuvat Risen rajapintaa siirtääkseen tietoa kirjanpitoon, kuluihin, laskuihin ja palkkoihin — ja niistä ulos. Rajapinta on raja: Rise omistaa kaiken sen vasemmalla puolella, kukin integraatiokumppani kaiken oikealla.
+
+<CardGroup cols={2}>
+  <Card title="Rise" icon="building-columns">
+    Kirjanpitosi, kulusi, laskusi, palkkasi ja raporttisi.
+  </Card>
+
+  <Card title="Risen rajapinta" icon="plug">
+    Liittymä, jota jokainen integraatio käyttää tiedon lukemiseen ja kirjoittamiseen.
+  </Card>
+</CardGroup>
+
+<Note>
+  Risen julkinen rajapinta on kehitteillä. Osa alla luetelluista integraatioista toimii jo natiiviliittymien kautta; loput avautuvat, kun julkinen rajapinta julkaistaan.
+</Note>
+
+## Missä vastuu kulkee
+
+Rise vastaa rajapinnasta, tunnistautumisesta, käyttöoikeuksista ja taloustietojesi eheydestä. Jokainen kumppanialusta vastaa omasta liittymästään, omasta käytettävyydestään, omasta hinnoittelustaan ja siitä, miten se käsittelee tietoa sen lähdettyä Risestä. Kun Zapierissa rakentamasi työnkulku hajoaa, vastuu on Zapierilla. Kun Risen rajapinta palauttaa virheen, vastuu on Risellä.
+
+## Integraatiokumppanit
+
+### MCP
+
+Model Context Protocol on avoin standardi, jonka avulla tekoälyavustajat ja agentit keskustelevat suoraan ulkoisten järjestelmien kanssa. Risen MCP-palvelin avaa kirjanpitotietosi mille tahansa MCP-yhteensopivalle asiakkaalle. Tekoälyavustaja voi vastata kysymyksiin kuten "paljonko käytimme ohjelmistoihin viime neljänneksellä?" tai luonnostella laskun puolestasi — pohjanaan Rise-tilisi ajantasaiset luvut.
+
+Sopii tiimeille, jotka jo käyttävät MCP:tä tukevia tekoälyavustajia.
+
+### Zapier
+
+Zapier yhdistää Risen yli 6 000 muuhun sovellukseen liipaisimien ja toimintojen avulla. Siirrä tietoa Risen ja CRM:n, sähköpostin, taulukoiden tai tallennuspalveluiden välillä ilman koodia. Tyypillisiä kulkuja: tee Rise-lasku kun kauppa sulkeutuu CRM:ssä, kirjaa kulu kun kuitti saapuu Gmailiin, tai lähetä viikoittainen tuloslaskelma Slackiin.
+
+Sopii tiimeille, jotka haluavat liittää Risen olemassa oleviin työkaluihin ilman koodaamista.
+
+### n8n
+
+n8n on avoimen lähdekoodin automaatioalusta, jonka voit ajaa omalla palvelimellasi tai pilvessä. Se toimii samalla liipaisin- ja toimintomallilla kuin Zapier, mutta antaa enemmän hallintaa: haarautuvaa logiikkaa, koodiaskelia ja omia muunnoksia. Itse ajettuna tehtäväkohtaista hinnoittelua ei ole.
+
+Sopii teknisille tiimeille, jotka haluavat välttää toimittajaloukun tai pitää työnkulkujen tiedot omassa ympäristössään.
+
+### Flashnode
+
+Flashnode on työnkulkualusta, joka keskittyy suuriin volyymeihin ja tapahtumapohjaisiin integraatioihin. Se on vahvimmillaan silloin, kun käsiteltävänä on paljon tapahtumia, tietoa pitää synkronoida usean järjestelmän välillä lähes reaaliajassa, tai putket ovat monimutkaisempia kuin yksinkertainen jos–niin-logiikka.
+
+Sopii talousoperaatioille, joissa pyörii suuria volyymeja tai useita järjestelmiä.
+
+### Räätälöidyt integraatiot
+
+Räätälöidyt integraatiot ovat suoria yhteyksiä, jotka Rise rakentaa tai tukee tietylle kumppanille: toiminnanohjausjärjestelmä, pankki, maksunvälittäjä tai toimialakohtainen työkalu. Näitä ei oteta käyttöön itsepalveluna. Ne perustuvat yleensä erilliseen sopimukseen Risen ja kumppanin välillä, ja Risen tiimi määrittää ne tilillesi.
+
+Sopii yritysasiakkaille, joilla on järjestelmä, jota mikään yleiskäyttöinen automaatioalusta ei kata.
+
+## Kumman valitset
+
+<CardGroup cols={2}>
+  <Card title="Tekoälypohjaiset työnkulut" icon="robot">
+    Käytä MCP:tä, kun haluat tekoälyavustajallesi pääsyn Risen ajantasaisiin tietoihin.
+  </Card>
+
+  <Card title="Automaatio ilman koodia" icon="wand-magic-sparkles">
+    Käytä Zapieria, kun liität Risen työkaluihin joista jo maksat.
+  </Card>
+
+  <Card title="Oma palvelin tai tekninen tiimi" icon="code-branch">
+    Käytä n8n:ää, kun haluat hallintaa, omaa logiikkaa tai oman ympäristön.
+  </Card>
+
+  <Card title="Suuret volyymit" icon="bolt">
+    Käytä Flashnodea tapahtumapohjaisiin, monen järjestelmän tietovirtoihin.
+  </Card>
+</CardGroup>
+
+## Mitä Rise hoitaa, mitä kumppani hoitaa
+
+<Tip>
+  Nopea sääntö siihen, kenen puoleen käännyt: jos ongelma on Risen tiedoissa, ota yhteyttä Riseen. Jos ongelma on työnkulussa joka siirtää tietoa, ota yhteyttä siihen alustaan joka työnkulun ajaa.
+</Tip>
+
+Rise vastaa näistä:
+
+- Rajapinta, sen tunnistautuminen, kutsurajat ja versiointi.
+- Taloustietojesi oikeellisuus ja täydellisyys.
+- Käyttöoikeudet ja lokit siitä, mihin kukin integraatio pääsee.
+
+Kumppanialusta vastaa näistä:
+
+- Liittymä itse sekä sen liipaisimet ja toiminnot.
+- Työnkulkujen suoritus, uudelleenyritykset ja virheenkäsittely omalla puolellaan.
+- Oma hinnoittelu, tuki ja tietojen säilytys.
+
+## Seuraavaksi
+
+<CardGroup cols={2}>
+  <Card title="AI-kirjanpito" icon="calculator" href="/fi/features/ai-bookkeeping">
+    Näin Rise tiliöi ja täsmäyttää tapahtumat automaattisesti.
+  </Card>
+
+  <Card title="Ota yhteyttä" icon="life-ring" href="/fi/support/contact">
+    Kysy tietystä integraatiosta tai pyydä räätälöityä yhteyttä.
+  </Card>
+</CardGroup>

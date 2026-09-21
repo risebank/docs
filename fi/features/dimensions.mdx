@@ -1,0 +1,150 @@
+---
+title: "Dimensiot"
+sidebarTitle: "Dimensiot"
+description: "Dimensiot kertovat, mitä varten raha meni. Merkitse laskurivit projektille tai kustannuspaikalle, niin Rise jakaa koko tuloslaskelman sen mukaan."
+---
+
+Tilikartta kertoo, **mihin** raha meni: ohjelmistoihin, vuokraan, alihankintaan. Dimensiot kertovat, **mitä varten**. Lisää dimensio — vaikka projekti tai kustannuspaikka — merkitse laskuriveille arvo, ja Rise jakaa koko tuloslaskelmasi sen mukaan.
+
+Dimensiot ovat sinun määriteltävissäsi. Rise ei tuo mukanaan yhtään valmista, joten luot täsmälleen ne akselit, joilla yrityksesi raportoi.
+
+## Mitä voit seurata
+
+<CardGroup cols={2}>
+  <Card title="Kustannuspaikat" icon="building">
+    Jaa kulut ja tuotot toimipisteiden, tiimien tai liiketoimintayksiköiden kesken — Helsinki ja Jyväskylä, tai myynti ja toimitus.
+  </Card>
+
+  <Card title="Projektit" icon="diagram-project">
+    Näe asiakasprojektin tai oman kehitystyön todellinen kustannus. Luvut kertyvät ostolaskuista, kululaskuista ja muistiotositteista.
+  </Card>
+
+  <Card title="Kohteet ja kiinteistöt" icon="warehouse">
+    Seuraa jokaista kiinteistöä, ajoneuvoa tai laitetta erikseen silloin, kun tilikartta ei niitä erottele.
+  </Card>
+
+  <Card title="Avustukset ja rahoitus" icon="hand-holding-dollar">
+    Kerää Business Finland- tai EU-hakemuksen taustalla olevat kulut ja vie ne Exceliin hakemuspohjaa varten.
+  </Card>
+</CardGroup>
+
+## Dimensioiden luominen
+
+Dimensiot löytyvät yrityksen asetuksista Risen selainsovelluksessa. Dimensio on akseli, ja arvo on valinta sillä akselilla.
+
+<Steps>
+  <Step title="Avaa yrityksen asetukset">
+    Mene kohtaan **Yrityksen asetukset** ja avaa **Dimensiot**.
+  </Step>
+  <Step title="Luo dimensio">
+    Anna akselille nimi: **Projekti**, **Kustannuspaikka**, **Kiinteistö**. Nimet ovat yrityksen sisällä yksilöllisiä.
+  </Step>
+  <Step title="Lisää arvot">
+    Lisää akselille kuuluvat vaihtoehdot: **Ratamon remontti**, **Talo 1**, **Jyväskylä**. Arvot ovat olemassa vain jos luot ne täällä — kukaan ei voi keksiä uutta laskua merkitessään.
+  </Step>
+  <Step title="Aseta oletuskohdistus">
+    Jokaisella arvolla on oletusosuus, 100 % ellet muuta sitä. Kun joku merkitsee rivin sillä arvolla, osuus tulee valmiiksi. Kätevää silloin, kun kustannuspaikka ottaa vaikka aina 60 % toistuvasta laskusta.
+  </Step>
+  <Step title="Kirjoita muistiin, milloin arvoa käytetään">
+    Voit halutessasi kuvata, milloin arvo kuuluu valita: "kaikki Kone Oy:n laskut", "kaikki Ratamon kohteeseen liittyvä". Nämä muistiinpanot ohjaavat kirjanpitotiimiä nyt ja automaattista merkintää myöhemmin.
+  </Step>
+</Steps>
+
+<Note>
+  Dimensiot kuuluvat yhdelle yritykselle. Jos Rise-tililläsi on useita yrityksiä, jokaisella on omat dimensionsa ja arvonsa.
+</Note>
+
+## Laskurivien merkitseminen
+
+Merkintä tehdään **riveittäin**, ei koko tositteelle — yksi lasku voi jakautua usealle projektille. Avaa tosite, laajenna rivi ja käytä sen **Dimensiot**-lohkoa.
+
+Voit merkitä rivejä näissä:
+
+- **Ostolaskut** — hyväksynnän yhteydessä tai jälkikäteen korjauksena
+- **Myyntilaskut** — tallennetuissa luonnoksissa ja lähetetyissä laskuissa
+- **Kululaskut** — kirjanpitäjä tai esihenkilö tekee
+- **Muistiotositteet** — kirjanpitotiimi tekee
+
+Yksi rivi voi kantaa arvoja useasta dimensiosta yhtä aikaa: sama alihankintarivi voi olla sekä **Projekti · Ratamo** että **Kustannuspaikka · Jyväskylä**.
+
+<Note>
+  Merkitseminen onnistuu vasta kun tosite on tallennettu, koska merkinnät kiinnittyvät tallennettuihin riveihin. Tallentamattomassa laskussa lohko kehottaa tallentamaan luonnoksen ensin. Jos korvaat merkityn luonnoksen rivit, merkinnät katoavat — Rise varoittaa siitä ennen tallennusta.
+</Note>
+
+### Rivin jakaminen usealle arvolle
+
+Kun yksi rivi palvelee kahta projektia, jaa se. Anna joko **prosenttiosuus** rivistä tai **euromäärä** rivin nettoarvoon asti, ja lisää toinen arvo lopulle.
+
+Rise ei pakota osuuksia sataan prosenttiin. Merkitse puolet kulusta, niin toinen puoli jää kohdistamatta. Merkitse enemmän kuin rivi on, niin raportti huomauttaa ylikohdistuksesta. Joustavuus on tarkoituksellista: osittainen merkintä on normaali tapa työskennellä.
+
+<Tip>
+  Käytä kululaskuriveillä prosentteja. Niillä riveillä ei ole omaa nettosummaa, joten euroina jakaminen ei ole mahdollista.
+</Tip>
+
+## Lukujen katsominen
+
+Kun rivit on merkitty, luvut seuraavat automaattisesti. Mitään ei tarvitse kirjata, kopioida tai päivittää. Korjaa merkintä laskulla, ja raportit muuttuvat heti tallennuksen jälkeen.
+
+<CardGroup cols={2}>
+  <Card title="Dimensioraportti" icon="chart-column">
+    Valitse **Raportoinnissa** dimensio ja jakso, niin näet kulut, tuotot ja netton jokaiselle akselin arvolle. Oletuksena kuluva tilikausi.
+  </Card>
+
+  <Card title="Kohdistamaton-rivi" icon="circle-question">
+    Jokainen dimensionäkymä päättyy siihen, mitä ei merkitty. Näin tiedät aina, kuinka suuri osa kuvasta on katettu.
+  </Card>
+
+  <Card title="Yhden arvon tuloslaskelma" icon="file-invoice-dollar">
+    Aja tuloslaskelma rajattuna yhteen arvoon — koko laskelma pelkästään sille projektille tai kohteelle.
+  </Card>
+
+  <Card title="Excel-vienti" icon="file-excel">
+    Vie mikä tahansa dimensionäkymä **XLSX**-muotoon. Tehty liitettäväksi avustus- ja rahoitushakemusten pohjiin.
+  </Card>
+</CardGroup>
+
+### Puuttuvien merkintöjen löytäminen
+
+**Pääkirja**-sivulla voit rajata yhteen dimension arvoon tai niihin kulu- ja tuottoriveihin, joilla **ei ole lainkaan merkintää** valitussa dimensiossa. Klikkaa kohdistamaton-riviltä läpi nähdäksesi, mitkä kirjaukset ovat vielä merkitsemättä, ja merkitse ne siitä.
+
+<Note>
+  Koska osittainen ja päällekkäinen merkintä on sallittua, dimensioiden summat ovat kohdistusnäkymä. Niiden ei ole tarkoitus täsmätä rivi riviltä virallisen tuloslaskelman kanssa. Raportti kertoo tämän myös ruudulla.
+</Note>
+
+## Kuka saa tehdä mitä
+
+| Tehtävä | Pääkäyttäjä | Esihenkilö | Kirjanpitäjä | Tilintarkastaja | Työntekijä |
+| --- | :-: | :-: | :-: | :-: | :-: |
+| Luo, nimeä ja arkistoi dimensioita ja arvoja | ✅ | ✅ | ✅ | — | — |
+| Merkitse osto- ja myyntilaskurivejä | ✅ | ✅ | ✅ | — | — |
+| Merkitse kululaskurivejä | ✅ | ✅ | ✅ | — | — |
+| Merkitse muistiotositteiden rivejä | — | — | ✅ | — | — |
+| Katso dimensioraportteja | ✅ | ✅ | ✅ | ✅ | — |
+
+Työntekijät eivät merkitse dimensioita, eivät edes omiin kululaskuihinsa. He toimittavat laskun, ja kirjanpitäjä tai esihenkilö merkitsee. Tilintarkastaja näkee kaiken eikä muuta mitään.
+
+## Nimeäminen ja arkistointi
+
+Dimensioita ja arvoja ei koskaan poisteta lopullisesti, joten historia säilyy.
+
+- **Nimeä** dimensio tai arvo uudelleen milloin tahansa. Jokainen vanha kirjaus seuraa uutta nimeä.
+- **Arkistoi** arvo, jota et enää käytä. Se katoaa valintalistoilta, mutta sillä merkityt kirjaukset näkyvät raporteilla edelleen arkistoiduksi merkittynä.
+- **Palauta** luomalla samanniminen arvo uudelleen. Rise tuo arkistoidun takaisin historioineen.
+
+Jokainen muutos dimensioihin kirjautuu muutoslokiin, ja lokista näkyy arvo ennen ja jälkeen.
+
+<Tip>
+  Aloita yhdestä dimensiosta ja muutamasta arvosta. Yksi hyvin merkitty kustannuspaikka-akseli on arvokkaampi kuin neljä puolittain merkittyä, ja voit lisätä akseleita myöhemmin.
+</Tip>
+
+## Liittyvät sivut
+
+<CardGroup cols={2}>
+  <Card title="Raportointi" icon="chart-line" href="/fi/features/reporting">
+    Tuloslaskelma, tase ja kassavirta — raportit, joita dimensiot viipaloivat.
+  </Card>
+
+  <Card title="Kulut" icon="receipt" href="/fi/features/expenses">
+    Miten kuitit ja kululaskut päätyvät kirjanpitoon.
+  </Card>
+</CardGroup>
