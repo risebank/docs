@@ -33,6 +33,7 @@
                 "pages": [
                   "features/ai-bookkeeping",
                   "features/expenses",
+                  "features/purchase-invoices",
                   "features/invoicing",
                   "features/payroll",
                   "features/dimensions",
