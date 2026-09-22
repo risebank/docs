@@ -79,6 +79,7 @@
                 "pages": [
                   "fi/features/ai-bookkeeping",
                   "fi/features/expenses",
+                  "fi/features/ostolaskut",
                   "fi/features/invoicing",
                   "fi/features/payroll",
                   "fi/features/dimensions",
