@@ -1,7 +1,7 @@
 ---
 title: "Palkanlaskenta ja viranomaisilmoitukset Risessä"
 sidebarTitle: "Palkat"
-description: "Aja palkat Risen kautta. Palkanmaksu, ennakonpidätys ja viranomaisilmoitukset hoituvat tekoälyn ja auktorisoitujen kirjanpitäjien voimin."
+description: "Tunnit esitäytetään työsopimuksen mukaan, loma-anomukset ja sairauspoissaolot hoituvat sovelluksessa, ja palkanmaksu, ennakonpidätys ja viranomaisilmoitukset hoitaa Risen tekoäly auktorisoidun kirjanpitäjän tarkistamana."
 icon:
   name: "people-group"
   style: "regular"
@@ -15,8 +15,8 @@ Rise hoitaa tiimisi palkanlaskennan: laskee brutosta nettoon, hoitaa ennakonpid�
 Palkat kulkevat työntekijän puhelimesta hyväksyntäsi kautta maksettuihin palkkoihin ja tehtyihin ilmoituksiin.
 
 <Steps>
-  <Step title="Työntekijät kirjaavat tunnit">
-    Kuukauden lopussa jokainen työntekijä avaa Risen mobiilisovelluksen ja kirjaa tehdyt tunnit sekä pitämänsä lomat ja sairauspoissaolot.
+  <Step title="Työntekijät vahvistavat tunnit">
+    Tunnit ovat valmiina: Rise esitäyttää ne työsopimuksen mukaan. Työntekijän tehtäväksi jää vahvistaa kuukausi ja kirjata se, mikä poikkeaa sopimuksesta. Lomat ja sairauspoissaolot ovat jo mukana, jos ne on ilmoitettu kuukauden aikana.
   </Step>
   <Step title="Esihenkilö hyväksyy tunnit">
     Esihenkilö käy kirjatut tunnit, lomat ja poissaolot läpi sovelluksessa ja hyväksyy ne. Korjaukset tehdään tässä vaiheessa, ennen palkanlaskentaa.
@@ -28,6 +28,34 @@ Palkat kulkevat työntekijän puhelimesta hyväksyntäsi kautta maksettuihin pal
     Kun palkka-ajo on hyväksytty, Rise käynnistää palkanmaksun työntekijöiden tileille ja tuo palkkalaskelmat suoraan kunkin työntekijän Rise-sovellukseen.
   </Step>
 </Steps>
+
+## Tunnit, lomat ja poissaolot
+
+Palkanlaskennan työläin osa on yleensä tuntien ja poissaolojen kerääminen. Rise kääntää asetelman toisin päin: sopimuksen mukainen työaika on oletus, ja työntekijä kirjaa vain sen, mikä siitä poikkeaa.
+
+<CardGroup cols={2}>
+  <Card title="Tunnit työsopimuksen mukaan" icon="file-signature">
+    Rise esitäyttää tunnit työsopimukseen kirjatun työajan mukaan. Kuukausipalkkaisella, jonka työaika ei vaihtele, ei ole mitään kirjattavaa — tunnit ovat valmiina ja työntekijä vain vahvistaa ne.
+  </Card>
+
+  <Card title="Koko kuukausi yhdellä kertaa" icon="calendar-days">
+    Tunteja ei tarvitse kirjata päivä kerrallaan. Työntekijä voi ilmoittaa koko kuukauden tunnit yhtenä kirjauksena, jos päiväkohtaista erittelyä ei tarvita.
+  </Card>
+</CardGroup>
+
+### Loma-anomukset
+
+Työntekijä anoo lomaa sovelluksessa: valitsee päivät ja lähettää anomuksen. Esihenkilö saa siitä ilmoituksen ja hyväksyy tai hylkää anomuksen sovelluksessa — samalla tavalla kuin muutkin hyväksynnät, ilman sähköposteja ja erillisiä lomakkeita.
+
+Hyväksytty loma siirtyy suoraan palkanlaskentaan. Sitä ei tarvitse kirjata uudestaan kuukauden tuntien yhteydessä.
+
+### Sairauspoissaolot
+
+Sairauspäivät ilmoitetaan sovelluksessa samalla tavalla kuin lomat. Ilmoitus näkyy esihenkilölle heti, ja päivät kulkevat palkanlaskentaan oikein käsiteltyinä ilman erillistä ilmoitusta palkanlaskijalle.
+
+<Tip>
+  Kun lomat ja sairauspoissaolot ilmoitetaan sitä mukaa kuin niitä pidetään, kuukauden vahvistus on pelkkä kuittaus. Silloin kuunvaihteessa ei tarvitse muistella, mitä kolme viikkoa sitten tapahtui.
+</Tip>
 
 ## Mitä Rise ilmoittaa puolestasi
 
