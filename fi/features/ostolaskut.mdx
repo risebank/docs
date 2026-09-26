@@ -1,15 +1,18 @@
 ---
 title: "Ostolaskut: vastaanotto, hyväksyntä ja maksu Risessä"
 sidebarTitle: "Ostolaskut"
-description: "Ostolaskut saapuvat Riseen verkkolaskuna, Magic Boxin kautta tai puhelimen jakovalikosta. Hyväksy ja ajasta maksu Maksa-toiminnolla, ja kuittaus tulee pankista itsestään."
+description: "Ostolaskut saapuvat Riseen verkkolaskuna, skannauspalvelusta, Magic Boxista, puhelimen jakovalikosta tai sähköpostin edelleenlähetyksellä. Hyväksy ja pane maksuun mobiilissa, ja kuittaus tulee pankista itsestään."
 icon: "file-invoice"
 ---
 
 Ostolasku kulkee Risessä neljän tilan läpi: **saapunut → hyväksytty maksuun → ajastettu maksuun → maksettu**. Kaikki neljä näkyvät samassa **Maksettavat**-näkymässä, joten näet yhdellä silmäyksellä, mikä odottaa sinua ja mikä on jo matkalla pankkiin.
 
-<Frame caption="Maksettavat-näkymä: saapuneet, hyväksytyt, ajastetut ja maksetut samalla sivulla.">
-  <img src="/images/ostolaskut-maksettavat.webp" alt="Risen Maksettavat-näkymä mobiilisovelluksessa" />
-</Frame>
+<img
+  src="/Risen-mobiilisovelluksen-Maksettavat-näkymä,Kaikki-välilehti.png"
+  alt="Risen Mobiilisovelluksen Maksettavat Näkymä,kaikki Välilehti"
+  title="Risen Mobiilisovelluksen Maksettavat Näkymä,kaikki Välilehti"
+  style={{ width:"31%" }}
+/>
 
 ## Laskun elinkaari
 
@@ -32,31 +35,55 @@ Näkymän yläreunan välilehdet — **Kaikki**, **Saapuneet**, **Hyväksytyt**,
 
 ## Näin lasku saapuu Riseen
 
-Tapoja on neljä. Käytä sitä, joka on sillä hetkellä nopein — kaikki päätyvät samaan **Saapuneet**-listaan.
+Tapoja on viisi. Käytä sitä, joka on sillä hetkellä nopein — kaikki päätyvät samaan **Saapuneet**-listaan.
 
 <Tabs>
   <Tab title="Verkkolasku">
-    Verkkolaskut tulevat suoraan sovellukseen. Kun toimittaja lähettää laskun yrityksesi verkkolaskuosoitteeseen, se ilmestyy Saapuneisiin valmiiksi luettuna. Sinun ei tarvitse välittää mitään eteenpäin eikä avata liitteitä.
+    Verkkolaskut eli eLaskut tulevat suoraan sovellukseen. Kun toimittaja lähettää laskun yrityksesi verkkolaskuosoitteeseen, se ilmestyy Saapuneisiin valmiiksi luettuna. Sinun ei tarvitse välittää mitään eteenpäin eikä avata liitteitä.
 
     Tämä on paras tapa vastaanottaa laskut. Pyydä toimittajiltasi verkkolaskua aina kun se on mahdollista.
   </Tab>
 
+  <Tab title="Skannauspalvelu">
+    Paperilaskut hoituvat skannauspalvelun kautta. Toimittaja lähettää laskun skannausosoitteeseen, palvelu skannaa ja tulkitsee sen, ja lasku ilmestyy Saapuneisiin samalla tavalla kuin verkkolasku.
+
+    Ohjaa paperilaskut skannausosoitteeseen kerran, niin niitä ei tarvitse käsitellä enää käsin.
+  </Tab>
+
   <Tab title="Magic Box">
-    Lataa lasku tiedostona Magic Boxiin, niin Rise lukee sen ja tekee siitä ostolaskun. Tämä on tapa hoitaa PDF-laskut, jotka tulevat sähköpostin liitteenä.
+    Lataa lasku tiedostona sovelluksen **Magic Boxiin**, niin Rise lukee sen ja tekee siitä ostolaskun. Tämä on tapa hoitaa yksittäiset PDF-laskut.
   </Tab>
 
   <Tab title="Puhelimen jakovalikko">
     Kun lasku on auki puhelimessa — sähköpostin liitteenä, selaimessa tai toimittajan omassa sovelluksessa — valitse **Jaa** ja sieltä **Rise**. Lasku siirtyy Riseen ilman että tallennat tiedostoa erikseen.
   </Tab>
 
-  <Tab title="Käsin lisätty">
-    Luo ostolasku itse **Ostolaskut**-valikosta. Tätä tarvitset harvoin: silloin kun laskua ei ole sähköisessä muodossa lainkaan.
+  <Tab title="Sähköpostin edelleenlähetys">
+    Lähetä laskun sisältänyt sähköposti edelleen yrityksesi Rise-osoitteeseen. Rise lukee liitteet ja tekee niistä ostolaskut.
+
+    Kun laskut tulevat aina samaan postilaatikkoon, tee edelleenlähetyssääntö kerran — sen jälkeen laskut siirtyvät Riseen itsestään.
   </Tab>
 </Tabs>
 
-## Hyväksyntä ja maksuunpano
+Ostolaskun voi myös luoda käsin **Ostolaskut**-valikosta. Sitä tarvitset harvoin: vain silloin, kun laskua ei ole sähköisessä muodossa lainkaan.
 
-Hyväksyntä ja maksu hoituvat samalla **Maksa**-toiminnolla. Avaa lasku Saapuneista ja paina **Maksa**. Näet laskun tiedot ja voit muuttaa kahta asiaa ennen vahvistusta.
+## Hyväksyntäkierto ja maksuunpano
+
+Saapunut lasku menee hyväksyntäkiertoon. Kierto — kuka laskut hyväksyy ja millä rajoilla — sovitaan käyttöönotossa, ja hyväksyjä saa laskusta ilmoituksen mobiiliin.
+
+Hyväksyminen ja maksuunpano ovat kaksi eri asiaa, jotka voi tehdä joko erikseen tai samalla kertaa:
+
+<CardGroup cols={2}>
+  <Card title="Hyväksy ja maksa kerralla" icon="bolt">
+    **Maksa** hyväksyy laskun ja panee maksun matkaan yhdellä kertaa. Nopein reitti, ja se hoituu mobiilissa.
+  </Card>
+
+  <Card title="Hyväksy ensin, maksa myöhemmin" icon="circle-check">
+    Lasku jää **Hyväksytty maksuun** -tilaan odottamaan, että joku panee maksun liikkeelle. Tähän kannattaa turvautua, kun lasku on asiallinen mutta maksuhetkestä päättää joku muu.
+  </Card>
+</CardGroup>
+
+Avaa lasku Saapuneista ja paina **Maksa**. Näet laskun tiedot ja voit muuttaa kahta asiaa ennen vahvistusta.
 
 <CardGroup cols={2}>
   <Card title="Maksutili" icon="building-columns">
@@ -70,12 +97,21 @@ Hyväksyntä ja maksu hoituvat samalla **Maksa**-toiminnolla. Avaa lasku Saapune
 
 Kun vahvistat, lasku siirtyy **Ajastettu maksuun** -tilaan ja odottaa eräpäivää.
 
-### Hyväksy ilman maksamista
+<img
+  src="/Risen-mobiilisovelluksen-Maksettavat-näkymä,-Ajastetut-välilehti.png"
+  alt="Risen Mobiilisovelluksen Maksettavat Näkymä, Ajastetut Välilehti"
+  title="Risen Mobiilisovelluksen Maksettavat Näkymä, Ajastetut Välilehti"
+  style={{ width:"36%" }}
+/>
 
-Voit myös hyväksyä laskun panematta maksua liikkeelle. Lasku siirtyy silloin **Hyväksytty maksuun** -tilaan ja jää sinne, kunnes joku panee sen maksuun. Näin kannattaa tehdä, kun lasku on asiallinen mutta maksuhetkestä päättää joku muu.
+### Dimensiot merkitään automaattisesti
+
+Kun dimensiot on otettu käyttöön, Rise merkitsee laskurivit automaattisesti dimensioiden asetuksiin kirjatun ohjauksen mukaan. Hyväksyjän ei tarvitse tehdä mitään.
+
+Merkintää voi korjata käsin riveittäin — hyväksynnän yhteydessä tai jälkikäteen — ja yksi lasku voi jakautua usealle projektille tai kustannuspaikalle.
 
 <Tip>
-  Merkitse dimensiot samalla kun hyväksyt laskun. Merkinnät tehdään riveittäin, ja yksi lasku voi jakautua usealle projektille tai kustannuspaikalle. Katso [Dimensiot](/fi/features/dimensions).
+  Katso [Dimensiot](/fi/features/dimensions): miten akselit ja arvot luodaan, miten rivi jaetaan usealle arvolle ja mistä näet, mikä jäi kohdistamatta.
 </Tip>
 
 ## Maksu ja kuittaus
@@ -108,7 +144,7 @@ Aloita valtuutuksesta ajoissa, vaikka käytät sitä vasta viimeisenä. Ohjeet o
   </Card>
 
   <Card title="Dimensiot" icon="diagram-project" href="/fi/features/dimensions">
-    Merkitse laskurivit projektille tai kustannuspaikalle hyväksynnän yhteydessä.
+    Laskurivien automaattinen kohdistus projektille tai kustannuspaikalle — ja miten korjaat sen.
   </Card>
 
   <Card title="AI-kirjanpito" icon="bolt" href="/fi/features/ai-bookkeeping">
