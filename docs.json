@@ -47,6 +47,7 @@
                   "features/mobile-app",
                   "features/bank-connections",
                   "account/accountant-team",
+                  "account/communication",
                   "account/compliance"
                 ]
               },
@@ -94,6 +95,7 @@
                   "fi/features/mobile-app",
                   "fi/features/bank-connections",
                   "fi/account/accountant-team",
+                  "fi/account/communication",
                   "fi/account/compliance"
                 ]
               },
