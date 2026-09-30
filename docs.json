@@ -32,6 +32,7 @@
                 "group": "Core Features",
                 "pages": [
                   "features/ai-bookkeeping",
+                  "features/magic-box",
                   "features/expenses",
                   "features/purchase-invoices",
                   "features/invoicing",
@@ -80,6 +81,7 @@
                 "group": "Ominaisuudet",
                 "pages": [
                   "fi/features/ai-bookkeeping",
+                  "fi/features/magic-box",
                   "fi/features/expenses",
                   "fi/features/ostolaskut",
                   "fi/features/invoicing",
