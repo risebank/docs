@@ -38,7 +38,6 @@
                   "features/invoicing",
                   "features/payroll",
                   "features/dimensions",
-                  "features/reporting",
                   "features/integrations"
                 ]
               },
@@ -87,7 +86,6 @@
                   "fi/features/invoicing",
                   "fi/features/payroll",
                   "fi/features/dimensions",
-                  "fi/features/reporting",
                   "fi/features/integrations"
                 ]
               },
