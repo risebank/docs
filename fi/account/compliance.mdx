@@ -39,7 +39,9 @@ Taloustiedot ovat yrityksesi arkaluonteisinta aineistoa. Rise on suunniteltu tur
 - **EU-konesalit:** kaikki taloustietosi säilytetään EU:n alueella olevissa konesaleissa GDPR:n suojassa. Tieto ei poistu EU:sta.
 - **Muuttumaton arkistointi:** tositteet arkistoidaan kryptografisella eheystarkistuksella. Tallennettua kirjausta ei voi jälkikäteen muuttaa, joten kirjausketjuun voi luottaa.
 - **Salaus siirrossa ja levossa:** kaikki tieto salataan TLS:llä siirron aikana ja AES-256:lla levossa.
-- **Pankkiyhteys vain lukuoikeudella:** Risen pankkiyhteys on lukuoikeus. Rise näkee tapahtumat mutta ei voi tehdä maksuja eikä siirtää varoja puolestasi.
+- **Tapahtumien haku on lukuoikeudella:** Risen PSD2-pankkiyhteys hakee tapahtumat eikä siirrä rahaa. Maksaminen Risestä on erillinen toiminto, joka vaatii oman maksuvaltuutuksensa.
+- **Jokainen maksu vahvistetaan erikseen:** kun maksat laskun Risestä, maksu vahvistetaan ennen maksuunpanoa puhelimen biometrisellä tunnistuksella. Rise ei pane maksuja matkaan itsestään.
+- **Kirjanpitäjä maksaa vain pyynnöstä:** Risen kirjanpitäjä voi tehdä maksun puolestasi, mutta vain kun olet sitä pyytänyt.
 
 ## Yhtiörakenne
 
