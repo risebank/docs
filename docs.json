@@ -37,8 +37,8 @@
                   "features/purchase-invoices",
                   "features/invoicing",
                   "features/payroll",
-                  "features/dimensions",
                   "features/reporting",
+                  "features/dimensions",
                   "features/integrations"
                 ]
               },
@@ -85,9 +85,9 @@
                   "fi/features/expenses",
                   "fi/features/ostolaskut",
                   "fi/features/invoicing",
+                  "fi/features/reporting",
                   "fi/features/payroll",
                   "fi/features/dimensions",
-                  "fi/features/reporting",
                   "fi/features/integrations"
                 ]
               },
