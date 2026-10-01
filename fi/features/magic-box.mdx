@@ -37,7 +37,7 @@ Käsittely määräytyy tiedoston tyypin mukaan. Mitään ei pantata odottamaan 
 
 | Aineisto | Mitä syntyy | Mitä seuraavaksi |
 | --- | --- | --- |
-| Ostolasku | Ostolaskuluonnos | Normaali hyväksyntäkierto |
+| Ostolasku | Valmis ostolaskuluonnos, kentät täytettyinä | Lähetät sen hyväksyntäkiertoon |
 | Myyntilaskuaineisto | Myyntilaskuluonnokset, lähetysvalmiina | Tarkistat ja lähetät |
 | Kuitti | Kulu, joka täsmäytetään tapahtumaan | Ei mitään |
 | Matka- ja kululasku | Hyväksyntä- ja maksuvalmis luonnos | Hyväksyntä ja maksu |
@@ -45,7 +45,11 @@ Käsittely määräytyy tiedoston tyypin mukaan. Mitään ei pantata odottamaan 
 
 ### Ostolasku
 
-Lasku luetaan sisään ja siitä syntyy ostolaskuluonnos. Luonnos menee normaaliin hyväksyntäkiertoon siinä missä verkkolaskukin — Magic Box on vain yksi tapa saada lasku sisään, ei oma rinnakkainen prosessinsa.
+Lasku luetaan sisään ja sovellukseen syntyy valmis ostolaskuluonnos. Valmis tarkoittaa tässä sitä, että kentät on jo täytetty: toimittaja, laskun numero ja viite, eräpäivä, summa ja alv sekä tiliöinti ja dimensiot. Mitään ei tarvitse kirjoittaa itse eikä mitään tarvitse hakea laskulta.
+
+Luonnos odottaa **Saapuneet**-listalla, kunnes joku lähettää sen eteenpäin. Siitä eteenpäin se kulkee normaalin hyväksyntäkierron läpi siinä missä verkkolaskukin — Magic Box on vain yksi tapa saada lasku sisään, ei oma rinnakkainen prosessinsa.
+
+Käytännössä työsi laskun kanssa on siis tarkistaa, että luonnoksen tiedot vastaavat laskua, ja viedä se eteenpäin.
 
 → [Ostolaskut](/fi/features/ostolaskut)
 
