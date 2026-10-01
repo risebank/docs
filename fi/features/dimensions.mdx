@@ -28,7 +28,7 @@ Dimensiot ovat sinun määriteltävissäsi. Rise ei tuo mukanaan yhtään valmis
   </Card>
 
   <Card title="Avustukset ja rahoitus" icon="hand-holding-dollar">
-    Kerää Business Finland- tai EU-hakemuksen taustalla olevat kulut ja vie ne Exceliin hakemuspohjaa varten.
+    Kerää Business Finland- tai EU-hakemuksen taustalla olevat kulut yhden arvon alle, niin hakemuksen kuluerittely on koossa.
   </Card>
 </CardGroup>
 
@@ -81,41 +81,11 @@ Yksi rivi voi kantaa arvoja useasta dimensiosta yhtä aikaa: sama alihankintariv
 
 Kun yksi rivi palvelee kahta projektia, jaa se. Anna joko **prosenttiosuus** rivistä tai **euromäärä** rivin nettoarvoon asti, ja lisää toinen arvo lopulle.
 
-Rise ei pakota osuuksia sataan prosenttiin. Merkitse puolet kulusta, niin toinen puoli jää kohdistamatta. Merkitse enemmän kuin rivi on, niin raportti huomauttaa ylikohdistuksesta. Joustavuus on tarkoituksellista: osittainen merkintä on normaali tapa työskennellä.
+Rise ei pakota osuuksia sataan prosenttiin. Merkitse puolet kulusta, niin toinen puoli jää kohdistamatta. Merkitse enemmän kuin rivi on, niin Rise huomauttaa ylikohdistuksesta. Joustavuus on tarkoituksellista: osittainen merkintä on normaali tapa työskennellä.
 
 <Tip>
   Käytä kululaskuriveillä prosentteja. Niillä riveillä ei ole omaa nettosummaa, joten euroina jakaminen ei ole mahdollista.
 </Tip>
-
-## Lukujen katsominen
-
-Kun rivit on merkitty, luvut seuraavat automaattisesti. Mitään ei tarvitse kirjata, kopioida tai päivittää. Korjaa merkintä laskulla, ja raportit muuttuvat heti tallennuksen jälkeen.
-
-<CardGroup cols={2}>
-  <Card title="Dimensioraportti" icon="chart-column">
-    Valitse **Raportoinnissa** dimensio ja jakso, niin näet kulut, tuotot ja netton jokaiselle akselin arvolle. Oletuksena kuluva tilikausi.
-  </Card>
-
-  <Card title="Kohdistamaton-rivi" icon="circle-question">
-    Jokainen dimensionäkymä päättyy siihen, mitä ei merkitty. Näin tiedät aina, kuinka suuri osa kuvasta on katettu.
-  </Card>
-
-  <Card title="Yhden arvon tuloslaskelma" icon="file-invoice-dollar">
-    Aja tuloslaskelma rajattuna yhteen arvoon — koko laskelma pelkästään sille projektille tai kohteelle.
-  </Card>
-
-  <Card title="Excel-vienti" icon="file-excel">
-    Vie mikä tahansa dimensionäkymä **XLSX**-muotoon. Tehty liitettäväksi avustus- ja rahoitushakemusten pohjiin.
-  </Card>
-</CardGroup>
-
-### Puuttuvien merkintöjen löytäminen
-
-**Pääkirja**-sivulla voit rajata yhteen dimension arvoon tai niihin kulu- ja tuottoriveihin, joilla **ei ole lainkaan merkintää** valitussa dimensiossa. Klikkaa kohdistamaton-riviltä läpi nähdäksesi, mitkä kirjaukset ovat vielä merkitsemättä, ja merkitse ne siitä.
-
-<Note>
-  Koska osittainen ja päällekkäinen merkintä on sallittua, dimensioiden summat ovat kohdistusnäkymä. Niiden ei ole tarkoitus täsmätä rivi riviltä virallisen tuloslaskelman kanssa. Raportti kertoo tämän myös ruudulla.
-</Note>
 
 ## Kuka saa tehdä mitä
 
@@ -125,7 +95,6 @@ Kun rivit on merkitty, luvut seuraavat automaattisesti. Mitään ei tarvitse kir
 | Merkitse osto- ja myyntilaskurivejä | ✅ | ✅ | ✅ | — | — |
 | Merkitse kululaskurivejä | ✅ | ✅ | ✅ | — | — |
 | Merkitse muistiotositteiden rivejä | — | — | ✅ | — | — |
-| Katso dimensioraportteja | ✅ | ✅ | ✅ | ✅ | — |
 
 Työntekijät eivät merkitse dimensioita, eivät edes omiin kululaskuihinsa. He toimittavat laskun, ja kirjanpitäjä tai esihenkilö merkitsee. Tilintarkastaja näkee kaiken eikä muuta mitään.
 
@@ -146,11 +115,11 @@ Jokainen muutos dimensioihin kirjautuu muutoslokiin, ja lokista näkyy arvo enne
 ## Liittyvät sivut
 
 <CardGroup cols={2}>
-  <Card title="Raportointi" icon="chart-line" href="/fi/features/reporting">
-    Tuloslaskelma, tase ja kassavirta — raportit, joita dimensiot viipaloivat.
-  </Card>
-
   <Card title="Kulut" icon="receipt" href="/fi/features/expenses">
     Miten kuitit ja kululaskut päätyvät kirjanpitoon.
+  </Card>
+
+  <Card title="Ostolaskut" icon="file-invoice" href="/fi/features/ostolaskut">
+    Mihin kohtaan laskun käsittelyä dimensiomerkintä osuu.
   </Card>
 </CardGroup>
